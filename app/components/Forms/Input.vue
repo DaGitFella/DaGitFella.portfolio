@@ -6,7 +6,7 @@
     <input :type="checkType" :name="type" :placeholder="getPlaceholder[1]" class="border-none outline rounded-xl 
     bg-white  outline-indigo-400  dark:outline-emerald-400 dark:bg-slate-900 
     focus:outline-indigo-500 focus:outline-2 px-7.5 py-3 dark:focus:outline-emerald-500 
-    transition-colors 500 ease-in-out text-xl" />
+    transition-colors 500 ease-in-out text-xl shadow-base dark:shadow-base-dark" />
   </div>
 </template>
 

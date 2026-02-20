@@ -1,5 +1,8 @@
 <template>
   <div class="w-full">
+    <div
+      class="dot-grid h-screen w-screen absolute -z-20 opacity-10 left-0"
+    ></div>
     <NuxtLayout
       name="title"
       title="./contato.sh"
@@ -14,17 +17,15 @@
           />
           <div class="flex flex-col gap-2.5">
             <span class="text-slate-400 text-[16px]"># Links rápidos</span>
-            <FormsLink to="github.com/DaGitFella"/>
-            <FormsLink to="linkedin.com/in/davi-lucas-510686283"/>
+            <div class="flex flex-col gap-4">
+              <FormsLink to="github.com/DaGitFella" />
+              <FormsLink to="linkedin.com/in/davi-lucas-510686283" />
+            </div>
           </div>
         </div>
         <form class="flex flex-col gap-7.5">
-          <FormsInput 
-          type="name"
-          />
-          <FormsInput
-          type="email" 
-          />
+          <FormsInput type="name" />
+          <FormsInput type="email" />
           <FormsTextArea />
           <FormsButton />
         </form>
@@ -33,8 +34,4 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-
-
-</script>
+<script setup lang="ts"></script>

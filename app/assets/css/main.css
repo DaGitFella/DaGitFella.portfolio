@@ -53,6 +53,8 @@
     #c6d2ff 50%,
     rgba(198, 210, 255, 0) 100%
   );
+
+  --color-grid-dots: var(--color-slate-950);
 }
 
 @layer base {
@@ -66,6 +68,15 @@
   }
 }
 
+@variant dark  {
+  --color-grid-dots: var(--color-slate-50);
+}
+
 .dark {
   color-scheme: dark;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, var(--color-grid-dots) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
