@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-title: "JetBrains Mono", monospace;
+  --font-body: "Poppins", sans-serif;
+  --shadow-base-color: 15, 23, 42;
+
+  --shadow-base:
+    0px 261px 73px 0 rgba(var(--shadow-base-color), 0),
+    0px 167px 67px 0 rgba(var(--shadow-base-color), 0.01),
+    0px 94px 56px 0 rgba(var(--shadow-base-color), 0.05),
+    0px 42px 42px 0 rgba(var(--shadow-base-color), 0.09),
+    0px 10px 23px 0 rgba(var(--shadow-base-color), 0.1);
+
+  --shadow-indigo-elevated:
+    0px 199px 56px 0 rgba(79, 70, 229, 0),
+    0px 127px 51px 0 rgba(79, 70, 229, 0.01),
+    0px 72px 43px 0 rgba(79, 70, 229, 0.03),
+    0px 32px 32px 0 rgba(79, 70, 229, 0.04),
+    0px 8px 18px 0 rgba(79, 70, 229, 0.05);
+
+  --shadow-base-dark: 
+    0px 130px 36px 0 rgba(248, 250, 252, 0), 
+    0px 83px 33px 0 rgba(248, 250, 252, 0.01), 
+    0px 47px 28px 0 rgba(248, 250, 252, 0.03), 
+    0px 21px 21px 0 rgba(248, 250, 252, 0.04), 
+    0px 5px 11px 0 rgba(248, 250, 252, 0.05);
+
+  --shadow-indigo-layered:
+    0px 66px 18px 0 rgba(79, 70, 229, 0),
+    0px 42px 17px 0 rgba(79, 70, 229, 0.03),
+    0px 24px 14px 0 rgba(79, 70, 229, 0.1),
+    0px 11px 11px 0 rgba(79, 70, 229, 0.17),
+    0px 3px 6px 0 rgba(79, 70, 229, 0.2);
+
+  --shadow-emerald-layered:
+    0px 66px 18px 0 rgba(16, 185, 129, 0),
+    0px 42px 17px 0 rgba(16, 185, 129, 0.03),
+    0px 24px 14px 0 rgba(16, 185, 129, 0.1),
+    0px 11px 11px 0 rgba(16, 185, 129, 0.17),
+    0px 3px 6px 0 rgba(16, 185, 129, 0.2);
+
+  --shadow-header-glow: 0 0 20px 2px var(--color-indigo-700 / 25%);
+  --shadow-header-glow-dark: 0 0 20px 2px var(--color-emerald-500 / 25%);
+
+  --drop-shadow-text-glow: 0 0 8px var(--color-indigo-700 / 40%);
+  --drop-shadow-text-glow-dark: 0 0 8px var(--color-emerald-500 / 40%);
+
+  --image-soft-blue: linear-gradient(
+    to bottom,
+    #c6d2ff 50%,
+    rgba(198, 210, 255, 0) 100%
+  );
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-950;
+    @apply transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-slate-950 text-slate-50;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}
