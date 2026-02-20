@@ -22,7 +22,6 @@
 </template>
 
 <script setup lang="ts">
-import { C } from 'vue-router/dist/router-CWoNjPRp.mjs';
 
 export interface Skill {
   name: string;
