@@ -1,11 +1,11 @@
 <template>
   <div
     class="w-full flex justify-center overflow-x-hidden h-fit my-8 
-    lg:my-0 py-5 border border-slate-300 rounded-xl"
+    lg:mb-8 lg:mt-0 2xl:mb-0 py-5 border border-slate-300 rounded-xl"
   >
     <LazyClientOnly>
       <Carousel
-        :autoplay="3000"
+        :autoplay="1000"
         :wrap-around="true"
         :transition="2000"
         snap-align="center"
