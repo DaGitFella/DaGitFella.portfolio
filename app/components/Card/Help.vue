@@ -14,11 +14,11 @@
           :IconName="icon || 'tabler:help'"
           class="w-12 h-12 text-indigo-700 dark:text-emerald-500"
         />
-        <h2 class="text-2xl lg:text-4xl font-bold">
+        <h2 class="text-2xl 2xl:text-4xl font-bold">
           {{ title }}
         </h2>
       </div>
-      <p class="text-slate-500 lg:text-xl font-title">{{ description }}</p>
+      <p class="text-slate-500 lg:text-sm 2xl:text-2xl font-title">{{ description }}</p>
       <div class="w-full h-0.5 bg-slate-400"></div>
     </div>
     <div class="flex flex-col gap-5">
@@ -27,7 +27,7 @@
         role="list"
         class="list-disc list-inside marker:text-indigo-500 dark:marker:text-emerald-500
         text-slate-400 font-title flex flex-col
-        gap-4"
+        2xl:gap-4 lg:text-sm lg:gap-3" 
       >
         <li v-for="service in services" :key="service">
           {{ service }}
