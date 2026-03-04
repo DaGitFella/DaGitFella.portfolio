@@ -3,22 +3,22 @@
     <div
       class="dot-grid h-screen w-screen absolute -z-20 opacity-10 left-0 top-0"
     ></div>
-    <div class="grid md:grid-cols-4 lg:grid-cols-5 justify-between w-full">
-      <section class="flex flex-col md:col-span-3 gap-10">
+    <div class="grid md:grid-cols-4 lg:grid-cols-12 justify-between w-full">
+      <section class="flex flex-col xl:col-span-8 2xl:col-span-7 gap-10">
         <article
           class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800"
         >
           <LazyWindowBar :show-actions="false" title="~/davi-portfolio" />
           <div class="flex flex-col gap-5 py-5 px-7.5">
-            <h1 class="text-2xl lg:text-5xl font-body font-bold">Olá, eu sou o Davi</h1>
+            <h1 class="text-2xl xl:text-3xl 2xl:text-5xl font-body font-bold">Olá, eu sou o Davi</h1>
             <h2
               class="text-indigo-500 font-bold lg:border-2 
-              lg:text-4xl  w-full lg:w-fit rounded-xl lg:px-7.5 py-1.5 
+              xl:text-2xl 2xl:text-4xl  w-full lg:w-fit rounded-xl lg:px-7.5 py-1.5 
               dark:text-emerald-500 font-title"
             >
               > $desenvolverdor_fullstack_
             </h2>
-            <p class="lg:text-xl max-w-183">
+            <p class="lg:text-xl max-w-prose">
               Desenvolvedor com 3+ anos de experiência em
               <span class="text-indigo-500 font-medium dark:text-emerald-500"
                 >Python</span
@@ -73,11 +73,11 @@
           </div>
         </aside>
       </section>
-      <figure class="hidden md:flex items-center col-span-1 justify-end">
+      <figure class="hidden md:flex items-center xl:col-span-4 2xl:col-span-5 col-span-1 justify-end">
         <div class="relative">
-          <img src="~/assets/images/binux_1.png" alt="Tux image" class="w-96" />
+          <img src="~/assets/images/binux_1.png" alt="Tux image" class="xl:w-70 2xl:w-96" />
           <div
-            class="h-140 w-140 
+            class="xl:h-70 xl:w-70 2xl:h-120 2xl:w-120 
             bg-[linear-gradient(to_bottom,#C6D2FF_50%,transparent_100%)] 
             absolute blur-3xl rounded-full -z-1 right-1/2 transform translate-x-1/2 top-1/2 
             -translate-y-1/2 dark:bg-[linear-gradient(to_bottom,#A4F4CF_50%,transparent_100%)]"
