@@ -2,7 +2,7 @@
   <div class="w-full">
     <NuxtLayout name="title" title="ls habilidades/" 
     description="# Tecnologias e ferramentas que domino para criar soluções completas">
-      <ul class="grid lg:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12.5 w-full pb-10">
+      <ul class="grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12.5 w-full pb-10">
         <LazyCardSkill v-for="skill in skills" :key="skill.name" :skill="skill" />
       </ul>
     </NuxtLayout>

@@ -4,7 +4,7 @@
       <h1
         class="flex items-center font-bold text-indigo-700 
         dark:text-emerald-500 font-title border-2 border-indigo-700 dark:border-emerald-500 
-        rounded-lg py-1.5 px-7.5 w-fit lg:text-4xl 2xl:text-6xl text-2xl"
+        rounded-lg py-1.5 px-7.5 w-fit lg:text-4xl 2xl:text-6xl text-2xl md:text-3xl"
       >
         <span>></span>
         {{ props.title }}

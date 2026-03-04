@@ -3,22 +3,22 @@
     <div
       class="dot-grid h-screen w-screen absolute -z-20 opacity-10 left-0 top-0"
     ></div>
-    <div class="grid md:grid-cols-4 lg:grid-cols-12 justify-between w-full">
-      <section class="flex flex-col xl:col-span-8 2xl:col-span-7 gap-10">
+    <div class="grid lg:grid-cols-12 justify-between w-full">
+      <section class="flex flex-col md:col-span-4 lg:col-span-8 2xl:col-span-7 gap-10">
         <article
           class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800"
         >
           <LazyWindowBar :show-actions="false" title="~/davi-portfolio" />
           <div class="flex flex-col gap-5 py-5 px-7.5">
-            <h1 class="text-2xl xl:text-3xl 2xl:text-5xl font-body font-bold">Olá, eu sou o Davi</h1>
+            <h1 class="text-2xl md:text-3xl xl:text-3xl 2xl:text-5xl font-body font-bold">Olá, eu sou o Davi</h1>
             <h2
-              class="text-indigo-500 font-bold lg:border-2 
-              xl:text-2xl 2xl:text-4xl  w-full lg:w-fit rounded-xl lg:px-7.5 py-1.5 
-              dark:text-emerald-500 font-title"
+              class="text-indigo-500 font-bold md:border-2 
+              xl:text-2xl 2xl:text-4xl w-full lg:w-fit rounded-xl lg:px-7.5 py-1.5 
+              dark:text-emerald-500 font-title md:text-2xl"
             >
               > $desenvolverdor_fullstack_
             </h2>
-            <p class="lg:text-xl max-w-prose">
+            <p class="md:text-base lg:text-xl max-w-prose">
               Desenvolvedor com 3+ anos de experiência em
               <span class="text-indigo-500 font-medium dark:text-emerald-500"
                 >Python</span
@@ -53,7 +53,7 @@
               <LazyButtonContact IconName="tabler:mail" />
             </div>
           </div>
-          <div class="flex gap-2.5 w-full md:w-fit flex-wrap justify-center">
+          <div class="flex md:hidden gap-2.5 w-full md:w-fit flex-wrap justify-center">
             <LazyButtonBrand
               text="Angular"
               class="text-red-700 bg-red-50 border-red-200"
@@ -73,7 +73,7 @@
           </div>
         </aside>
       </section>
-      <figure class="hidden md:flex items-center xl:col-span-4 2xl:col-span-5 col-span-1 justify-end">
+      <figure class="hidden md:hidden items-center xl:col-span-4 2xl:col-span-5 col-span-1 justify-end">
         <div class="relative">
           <img src="~/assets/images/binux_1.png" alt="Tux image" class="xl:w-70 2xl:w-96" />
           <div

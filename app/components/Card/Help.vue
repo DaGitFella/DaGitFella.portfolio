@@ -8,16 +8,16 @@
     hover:outline-[3px] hover:outline-indigo-500 dark:hover:outline-emerald-500
     dark:hover:shadow-emerald-layered"
   >
-    <div class="flex flex-col 2xl:gap-6 lg:gap-4">
-      <div class="flex flex-col 2xl:gap-6 lg:gap-3">
+    <div class="flex flex-col gap-6 2xl:gap-6 lg:gap-4">
+      <div class="flex flex-col gap-6 2xl:gap-6 lg:gap-3">
         <LazyCardIcon
           :IconName="icon || 'tabler:help'"
           class="w-12 h-12 text-indigo-700 dark:text-emerald-500"
         />
-        <h2 class="text-xl 2xl:text-4xl font-bold">
+        <h2 class="text-xl md:text-2xl 2xl:text-4xl font-bold">
           {{ title }}
         </h2>
-        <p class="text-slate-500 lg:text-base 2xl:text-xl font-title">{{ description }}</p>
+        <p class="text-slate-500 text-xl lg:text-base 2xl:text-xl font-title">{{ description }}</p>
       </div>
       <div class="w-full h-0.5 bg-slate-400"></div>
     </div>
