@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group flex flex-col font-body gap-7.5 rounded-xl lg:h-140
+    class="group flex flex-col font-body gap-7.5 rounded-xl lg:h-128 2xl:h-140
     transition-colors duration-300 ease-in-out
     px-12.5 py-10 bg-slate-100 outline-slate-200 outline
     shadow-base dark:bg-slate-900 dark:outline-slate-800 text-slate-950
@@ -8,17 +8,17 @@
     hover:outline-[3px] hover:outline-indigo-500 dark:hover:outline-emerald-500
     dark:hover:shadow-emerald-layered"
   >
-    <div class="flex flex-col gap-6">
-      <div class="flex flex-col gap-6">
+    <div class="flex flex-col 2xl:gap-6 lg:gap-4">
+      <div class="flex flex-col 2xl:gap-6 lg:gap-3">
         <LazyCardIcon
           :IconName="icon || 'tabler:help'"
           class="w-12 h-12 text-indigo-700 dark:text-emerald-500"
         />
-        <h2 class="text-2xl 2xl:text-4xl font-bold">
+        <h2 class="text-xl 2xl:text-4xl font-bold">
           {{ title }}
         </h2>
+        <p class="text-slate-500 lg:text-base 2xl:text-xl font-title">{{ description }}</p>
       </div>
-      <p class="text-slate-500 lg:text-sm 2xl:text-2xl font-title">{{ description }}</p>
       <div class="w-full h-0.5 bg-slate-400"></div>
     </div>
     <div class="flex flex-col gap-5">
@@ -26,7 +26,7 @@
       <ul
         role="list"
         class="list-disc list-inside marker:text-indigo-500 dark:marker:text-emerald-500
-        text-slate-400 font-title flex flex-col
+        text-slate-400 font-title flex flex-col 2xl:text-base
         2xl:gap-4 lg:text-sm lg:gap-3" 
       >
         <li v-for="service in services" :key="service">
