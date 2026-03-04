@@ -3,7 +3,7 @@
     <NuxtLayout name="title" title="cat habilidades.json" 
     description="# Tecnologias e ferramentas que domino para criar soluções completas">
       <ul class="grid lg:grid-cols-2 gap-12.5 w-full">
-        <CardSkill v-for="skill in skills" :key="skill.name" :skill="skill" />
+        <LazyCardSkill v-for="skill in skills" :key="skill.name" :skill="skill" />
       </ul>
     </NuxtLayout>
   </div>

@@ -5,7 +5,7 @@
       <article
         class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800"
       >
-        <WindowBar :show-actions="false" title="~/davi-portfolio" />
+        <LazyWindowBar :show-actions="false" title="~/davi-portfolio" />
         <div class="flex flex-col gap-5 py-5 px-7.5">
           <h1 class="text-5xl font-body font-bold">Olá, eu sou o Davi</h1>
           <h2
@@ -36,31 +36,31 @@
       </article>
       <aside class="flex flex-col gap-7.5">
         <div class="flex items-center gap-5">
-          <ButtonOutlined
+          <LazyButtonOutlined
             text="Download CV"
             :showIcon="true"
             :IconName="'heroicons:arrow-down-circle'"
           />
           <div class="flex gap-2.5">
-            <ButtonContact />
-            <ButtonContact IconName="tabler:brand-linkedin" />
-            <ButtonContact IconName="tabler:mail" />
+            <LazyButtonContact />
+            <LazyButtonContact IconName="tabler:brand-linkedin" />
+            <LazyButtonContact IconName="tabler:mail" />
           </div>
         </div>
         <div class="flex gap-2.5">
-          <ButtonBrand
+          <LazyButtonBrand
             text="Angular"
             class="text-red-700 bg-red-50 border-red-200"
           />
-          <ButtonBrand
+          <LazyButtonBrand
             text="Python"
             class="text-sky-700 bg-sky-50 boder-sky-200"
           />
-          <ButtonBrand
+          <LazyButtonBrand
             text="Nuxt"
             class="text-teal-700 bg-teal-50 border-teal-200"
           />
-          <ButtonBrand
+          <LazyButtonBrand
             text="TypeScript"
             class="text-amber-700 bg-amber-50 border-amber-200"
           />

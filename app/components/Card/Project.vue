@@ -8,7 +8,7 @@
     dark:hover:shadow-emerald-layered"
   >
     <div class="card-top">
-      <WindowBar :title="project.title" class="bg-transparent text-slate-400" />
+      <LazyWindowBar :title="project.title" class="bg-transparent text-slate-400" />
       <div class="overflow-hidden">
         <img
         :src="project.image"
@@ -28,18 +28,18 @@
           <p class="text-slate-400 text-xl">{{ project.description }}</p>
         </div>
         <div class="flex flex-wrap gap-2.5 h-fit w-full">
-          <CardTechBadge v-for="tech in project.techStack" :tech="tech" type="project" />
+          <LazyCardTechBadge v-for="tech in project.techStack" :tech="tech" type="project" />
         </div>
       </div>
       <div class="card-bottom flex gap-3.5">
-        <ButtonCard
+        <LazyButtonCard
           text="GitHub"
           IconName="tabler:brand-github"
           :show-icon="true"
           class="bg-indigo-950 text-indigo-50 hover:bg-indigo-900
           dark:bg-emerald-950 dark:text-emerald-50 dark:hover:bg-emerald-900"
         />
-        <ButtonCard
+        <LazyButtonCard
           v-if="project.showLiveDemo"
           text="Live"
           :show-icon="true"

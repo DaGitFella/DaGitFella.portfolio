@@ -6,13 +6,13 @@
   dark:hover:outline-emerald-500 cursor-pointer dark:hover:shadow-emerald-layered">
     <div class="flex justify-between items-center">
       <div class="flex items-center gap-4">
-        <CardIcon :icon="skill.icon" />
+        <LazyCardIcon :icon="skill.icon" />
         <h2 class="text-2xl font-medium font-title">{{ skill.name }}</h2>
       </div>
       
     </div>
     <div class="flex flex-wrap gap-5 mt-5">
-      <CardTechBadge
+      <LazyCardTechBadge
         v-for="tech in skill.techstack"
         :tech="tech"
         type="skill"

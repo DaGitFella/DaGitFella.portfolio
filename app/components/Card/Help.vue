@@ -10,7 +10,7 @@
   >
     <div class="flex flex-col gap-6">
       <div class="flex flex-col gap-6">
-        <CardIcon
+        <LazyCardIcon
           :IconName="icon || 'tabler:help'"
           class="w-12 h-12 text-indigo-700 dark:text-emerald-500"
         />

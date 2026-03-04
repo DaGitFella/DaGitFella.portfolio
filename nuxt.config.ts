@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   app: {
-    pageTransition: { name: 'slide', mode: 'out-in' }
+    pageTransition: { name: 'slide', mode: 'out-in' },
   },
   css: [
     '@/assets/css/main.css',
@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/hints',
     '@vueuse/nuxt',
+    '@vueuse/motion/nuxt',
     '@nuxt/image',
     '@nuxtjs/color-mode'
   ],

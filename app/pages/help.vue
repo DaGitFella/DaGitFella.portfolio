@@ -7,7 +7,7 @@
     >
       <ul class="grid lg:grid-cols-3 gap-12.5 w-full h-fit">
         <li v-for="service in services" :key="service.title">
-          <CardHelp
+          <LazyCardHelp
             :title="service.title"
             :description="service.description"
             :services="service.services"
