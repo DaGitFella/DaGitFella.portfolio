@@ -8,7 +8,7 @@
       title="./contato.sh"
       description="# Disponível para novos projetos e oportunidades"
     >
-      <div class="flex flex-col-reverse py-8 lg:py-0 lg:grid lg:grid-cols-2 w-full gap-25">
+      <div class="flex flex-col-reverse pb-8 lg:py-0 lg:grid lg:grid-cols-2 w-full gap-8 lg:gap-25">
         <div class="flex flex-col gap-7.5">
           <FormsInfo
             dev-name="davi"
