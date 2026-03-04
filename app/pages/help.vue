@@ -5,7 +5,7 @@
       title="tldr serviços"
       description="# Serviços que forneço que podem ajudar você ou sua empresa"
     >
-      <ul class="grid lg:grid-cols-3 gap-8 lg:gap-12.5 w-full h-fit">
+      <ul class="grid lg:grid-cols-3 gap-8 lg:gap-12.5 w-full">
         <li v-for="service in services" :key="service.title">
           <LazyCardHelp
             :title="service.title"
@@ -15,7 +15,7 @@
           />
         </li>
       </ul>
-      <LazyStatsCaroussel />
+      <StatsCaroussel />
     </NuxtLayout>
   </div>
 </template>

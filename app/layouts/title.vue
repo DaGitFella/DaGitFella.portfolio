@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col items-center w-full py-15 gap-8 lg:gap-12.5 h-screen">
+  <main class="flex flex-col items-center w-full pt-15 gap-8 lg:gap-12.5 h-fit">
     <div class="flex flex-col items-center gap-5">
       <h1
         class="flex items-center font-bold text-indigo-700 
