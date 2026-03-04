@@ -18,7 +18,7 @@
       />
       </div>
     </div>
-    <div class="px-9 pb-10 h-90 flex flex-col gap-7.5">
+    <div class="px-9 pb-10 h-full flex flex-col gap-7.5">
       <div class="card-content flex flex-col gap-5">
         <div class="card-text flex flex-col gap-5">
           <div class="card-title font-semibold font-poppins gap-2.5 text-[28px] flex">
