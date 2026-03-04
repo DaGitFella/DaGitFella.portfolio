@@ -18,7 +18,7 @@
       />
       </div>
     </div>
-    <div class="px-9 pb-10 h-100 flex flex-col gap-7.5">
+    <div class="px-9 pb-10 h-90 flex flex-col gap-7.5">
       <div class="card-content flex flex-col gap-5">
         <div class="card-text flex flex-col gap-5">
           <div class="card-title font-semibold font-poppins gap-2.5 text-[28px] flex">
@@ -27,11 +27,11 @@
           </div>
           <p class="text-slate-400 text-xl">{{ project.description }}</p>
         </div>
-        <div class="flex flex-wrap gap-2.5 h-fit w-full">
+        <div class="grid grid-cols-2 lg:grid-cols-3  gap-2.5 h-fit w-full">
           <LazyCardTechBadge v-for="tech in project.techStack" :tech="tech" type="project" />
         </div>
       </div>
-      <div class="card-bottom flex gap-3.5">
+      <div class="card-bottom grid grid-cols-2 lg:flex gap-3.5">
         <LazyButtonCard
           text="GitHub"
           IconName="tabler:brand-github"

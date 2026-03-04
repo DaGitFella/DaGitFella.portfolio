@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group flex flex-col font-body gap-7.5 rounded-xl h-140
+    class="group flex flex-col font-body gap-7.5 rounded-xl lg:h-140
     transition-colors duration-300 ease-in-out
     px-12.5 py-10 bg-slate-100 outline-slate-200 outline
     shadow-base dark:bg-slate-900 dark:outline-slate-800 text-slate-950
@@ -14,11 +14,11 @@
           :IconName="icon || 'tabler:help'"
           class="w-12 h-12 text-indigo-700 dark:text-emerald-500"
         />
-        <h2 class="text-4xl font-bold">
+        <h2 class="text-2xl lg:text-4xl font-bold">
           {{ title }}
         </h2>
       </div>
-      <p class="text-slate-500 text-xl font-title">{{ description }}</p>
+      <p class="text-slate-500 lg:text-xl font-title">{{ description }}</p>
       <div class="w-full h-0.5 bg-slate-400"></div>
     </div>
     <div class="flex flex-col gap-5">

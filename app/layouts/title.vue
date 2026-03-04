@@ -1,10 +1,10 @@
 <template>
-  <main class="flex flex-col items-center w-full py-15 gap-12.5 h-screen">
+  <main class="flex flex-col items-center w-full py-15 gap-8 lg:gap-12.5 h-screen">
     <div class="flex flex-col items-center gap-5">
       <h1
         class="flex items-center font-bold text-indigo-700 
         dark:text-emerald-500 font-title border-2 border-indigo-700 dark:border-emerald-500 
-        rounded-lg py-1.5 px-7.5 w-fit lg:text-6xl text-xl"
+        rounded-lg py-1.5 px-7.5 w-fit lg:text-6xl text-3xl"
       >
         <span>></span>
         {{ props.title }}

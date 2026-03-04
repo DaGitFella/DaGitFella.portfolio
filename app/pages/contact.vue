@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full">
+  <div class="w-full h-full">
     <div
-      class="dot-grid h-screen w-screen absolute -z-20 opacity-10 left-0"
+      class="dot-grid h-screen w-screen absolute -z-20 opacity-10 left-0 top-0"
     ></div>
     <NuxtLayout
       name="title"

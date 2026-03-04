@@ -1,7 +1,7 @@
 <template>
 
     <span class="px-4 flex justify-center py-2.5 transition-colors duration-300 
-    rounded-lg border text-[16px] ease-in-out h-fit font-body]"
+    rounded-lg border text-sm lg:text-[16px] ease-in-out h-fit font-body]"
     :class="badgeClass">
         {{ props.tech }}
     </span>

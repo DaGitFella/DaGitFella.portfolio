@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex px-50 items-center justify-center">
+  <div class="min-h-screen flex px-5 lg:px-50 items-center justify-center">
     <NuxtLayout name="sidebar">
       <NuxtPage />
     </NuxtLayout>
