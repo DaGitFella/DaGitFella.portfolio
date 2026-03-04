@@ -11,7 +11,7 @@
         dir="left-to-right"
         :pause-autoplay-on-hover="true"
         transitionEasing="ease-in-out"
-        class="max-w-92.5 lg:max-w-full w-full"
+        class="max-w-80 lg:max-w-full w-full"
       >
         <slide v-for="skill in skills" :key="skill.skill">
           <LazyStatsItem

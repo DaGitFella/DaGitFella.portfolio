@@ -5,7 +5,7 @@
       title="tldr serviços"
       description="# Serviços que forneço que podem ajudar você ou sua empresa"
     >
-      <ul class="grid lg:grid-cols-3 gap-8 lg:gap-12.5 w-full">
+      <ul class="grid lg:grid-cols-3 gap-8 lg:gap-12.5 w-full h-fit">
         <li v-for="service in services" :key="service.title">
           <LazyCardHelp
             :title="service.title"
@@ -15,12 +15,14 @@
           />
         </li>
       </ul>
-      <StatsCaroussel />
+      <LazyStatsCaroussel />
     </NuxtLayout>
   </div>
 </template>
 
 <script setup lang="ts">
+import { reactive } from 'vue';
+
 interface Service {
   title: string;
   description: string;
