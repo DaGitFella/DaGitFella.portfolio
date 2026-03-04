@@ -13,7 +13,7 @@
         <img
         :src="project.image"
         :alt="project.title"
-        class="w-full h-60 object-cover transition-transform duration-300 ease-in-out
+        class="w-full xl:h-40 2xl:h-55 object-cover transition-transform duration-300 ease-in-out
         group-hover:scale-125"
       />
       </div>

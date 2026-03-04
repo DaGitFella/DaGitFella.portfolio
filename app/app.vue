@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen px-5 xl:px-30 2xl:px-50">
+  <div class="min-h-screen px-5 xl:px-25 2xl:px-50">
     <NuxtLayout name="sidebar">
       <NuxtPage />
     </NuxtLayout>
