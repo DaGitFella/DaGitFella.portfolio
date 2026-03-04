@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtLayout name="title" title="ls projetos/">
+    <NuxtLayout name="title" title="cat projetos">
       <ul class="grid lg:grid-cols-3 gap-11 w-full h-fit pb-20">
         <li v-for="project in projects" :key="project.title">
           <LazyCardProject :project="project" />

@@ -21,11 +21,11 @@
     <div class="px-9 pb-10 h-full flex flex-col gap-7.5">
       <div class="card-content flex flex-col gap-5">
         <div class="card-text flex flex-col gap-5">
-          <div class="card-title font-semibold font-poppins gap-2.5 text-[28px] flex">
+          <div class="card-title font-semibold font-poppins gap-2.5 text-xl lg:text-[28px] flex">
             <span class="text-indigo-700 dark:text-emerald-500">$</span>
             <h2 class="font-[poppins]">{{ project.title }}</h2>
           </div>
-          <p class="text-slate-400 text-xl">{{ project.description }}</p>
+          <p class="text-slate-400 text-sm lg:text-xl">{{ project.description }}</p>
         </div>
         <div class="grid grid-cols-2 lg:grid-cols-3  gap-2.5 h-fit w-full">
           <LazyCardTechBadge v-for="tech in project.techStack" :tech="tech" type="project" />

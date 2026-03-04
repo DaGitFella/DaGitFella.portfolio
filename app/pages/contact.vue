@@ -8,7 +8,7 @@
       title="./contato.sh"
       description="# Disponível para novos projetos e oportunidades"
     >
-      <div class="grid grid-cols-2 w-full gap-25">
+      <div class="flex flex-col-reverse py-8 lg:py-0 lg:grid lg:grid-cols-2 w-full gap-25">
         <div class="flex flex-col gap-7.5">
           <FormsInfo
             dev-name="davi"
@@ -16,7 +16,7 @@
             dev-loc="Natal/RN - Brasil"
           />
           <div class="flex flex-col gap-2.5">
-            <span class="text-slate-400 text-[16px]"># Links rápidos</span>
+            <span class="text-slate-400 text-sm lg:text-[16px]"># Links rápidos</span>
             <div class="flex flex-col gap-4">
               <FormsLink to="github.com/DaGitFella" />
               <FormsLink to="linkedin.com/in/davi-lucas-510686283" />
