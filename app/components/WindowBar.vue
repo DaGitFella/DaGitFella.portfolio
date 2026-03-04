@@ -5,7 +5,7 @@
         <div class="rounded-full w-3 h-3 bg-yellow-600"></div>
         <div class="rounded-full w-3 h-3 bg-green-600"></div>
     </div>
-    <div class="flex items-center text-[16px] gap-2.5">
+    <div class="flex items-center text-sm lg:text-[16px] gap-2.5">
         <Icon name="tabler:terminal" />
         <p>{{ title }}</p>
     </div>

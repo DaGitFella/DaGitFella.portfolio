@@ -3,34 +3,36 @@
     <div
       class="dot-grid h-screen w-screen absolute -z-20 opacity-10 left-0 top-0"
     ></div>
-    <div class="grid grid-cols-5 justify-between">
-      <section class="flex flex-col col-span-3 gap-10">
+    <div class="grid lg:grid-cols-5 justify-between w-full">
+      <section class="flex flex-col lg:col-span-3 gap-10">
         <article
           class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800"
         >
           <LazyWindowBar :show-actions="false" title="~/davi-portfolio" />
           <div class="flex flex-col gap-5 py-5 px-7.5">
-            <h1 class="lg:text-5xl font-body font-bold">Olá, eu sou o Davi</h1>
+            <h1 class="text-2xl lg:text-5xl font-body font-bold">Olá, eu sou o Davi</h1>
             <h2
-              class="text-indigo-500 font-bold border-2 text-4xl w-fit rounded-xl px-7.5 py-1.5 dark:text-emerald-500 font-title"
+              class="text-indigo-500 font-bold lg:border-2 
+              lg:text-4xl  w-full lg:w-fit rounded-xl lg:px-7.5 py-1.5 
+              dark:text-emerald-500 font-title"
             >
               > $desenvolverdor_fullstack_
             </h2>
-            <p class="text-xl">
+            <p class="lg:text-xl max-w-183">
               Desenvolvedor com 3+ anos de experiência em
               <span class="text-indigo-500 font-medium dark:text-emerald-500"
                 >Python</span
               >
-              e no <br />
+              e no 
               ecossistema
               <span class="text-indigo-500 font-medium dark:text-emerald-500"
                 >JavaScript</span
-              >. Atuo com foco em qualidade de entrega <br />
+              >. Atuo com foco em qualidade de entrega 
               através de
               <span class="text-indigo-500 font-medium dark:text-emerald-500"
                 >TDD</span
               >
-              e metodologias ágeis como <br />
+              e metodologias ágeis como 
               <span class="text-indigo-500 font-medium dark:text-emerald-500"
                 >Scrum e Kanban</span
               >.
@@ -43,14 +45,15 @@
               text="Download CV"
               :showIcon="true"
               :IconName="'heroicons:arrow-down-circle'"
+              class="w-full lg:w-fit"
             />
-            <div class="flex gap-2.5">
+            <div class="hidden lg:flex gap-2.5">
               <LazyButtonContact />
               <LazyButtonContact IconName="tabler:brand-linkedin" />
               <LazyButtonContact IconName="tabler:mail" />
             </div>
           </div>
-          <div class="flex gap-2.5">
+          <div class="flex gap-2.5 w-full lg:w-fit flex-wrap justify-center">
             <LazyButtonBrand
               text="Angular"
               class="text-red-700 bg-red-50 border-red-200"
@@ -70,11 +73,14 @@
           </div>
         </aside>
       </section>
-      <figure class="flex items-center col-span-2 justify-end">
+      <figure class="hidden lg:flex items-center col-span-2 justify-end">
         <div class="relative">
           <img src="~/assets/images/binux_1.png" alt="Tux image" class="w-96" />
           <div
-            class="h-140 w-140 bg-[linear-gradient(to_bottom,#C6D2FF_50%,transparent_100%)] absolute blur-3xl rounded-full -z-1 right-1/2 transform translate-x-1/2 top-1/2 -translate-y-1/2 dark:bg-[linear-gradient(to_bottom,#A4F4CF_50%,transparent_100%)]"
+            class="h-140 w-140 
+            bg-[linear-gradient(to_bottom,#C6D2FF_50%,transparent_100%)] 
+            absolute blur-3xl rounded-full -z-1 right-1/2 transform translate-x-1/2 top-1/2 
+            -translate-y-1/2 dark:bg-[linear-gradient(to_bottom,#A4F4CF_50%,transparent_100%)]"
           ></div>
         </div>
       </figure>
