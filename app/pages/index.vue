@@ -3,8 +3,8 @@
     <div
       class="dot-grid h-screen w-screen absolute -z-20 opacity-10 left-0 top-0"
     ></div>
-    <div class="grid lg:grid-cols-5 justify-between w-full">
-      <section class="flex flex-col lg:col-span-3 gap-10">
+    <div class="grid md:grid-cols-4 lg:grid-cols-5 justify-between w-full">
+      <section class="flex flex-col md:col-span-3 gap-10">
         <article
           class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800"
         >
@@ -47,13 +47,13 @@
               :IconName="'heroicons:arrow-down-circle'"
               class="w-full lg:w-fit"
             />
-            <div class="hidden lg:flex gap-2.5">
+            <div class="hidden md:flex gap-2.5">
               <LazyButtonContact />
               <LazyButtonContact IconName="tabler:brand-linkedin" />
               <LazyButtonContact IconName="tabler:mail" />
             </div>
           </div>
-          <div class="flex gap-2.5 w-full lg:w-fit flex-wrap justify-center">
+          <div class="flex gap-2.5 w-full md:w-fit flex-wrap justify-center">
             <LazyButtonBrand
               text="Angular"
               class="text-red-700 bg-red-50 border-red-200"
@@ -73,7 +73,7 @@
           </div>
         </aside>
       </section>
-      <figure class="hidden lg:flex items-center col-span-2 justify-end">
+      <figure class="hidden md:flex items-center col-span-1 justify-end">
         <div class="relative">
           <img src="~/assets/images/binux_1.png" alt="Tux image" class="w-96" />
           <div
