@@ -13,7 +13,7 @@
             <h1 class="text-2xl md:text-3xl xl:text-3xl 2xl:text-5xl font-body font-bold">Olá, eu sou o Davi</h1>
             <h2
               class="text-indigo-500 font-bold md:border-2 
-              xl:text-2xl 2xl:text-4xl w-full lg:w-fit rounded-xl lg:px-7.5 py-1.5 
+              xl:text-2xl 2xl:text-4xl w-full lg:w-fit rounded-xl md:px-7.5 py-1.5 
               dark:text-emerald-500 font-title md:text-2xl"
             >
               > $desenvolverdor_fullstack_
