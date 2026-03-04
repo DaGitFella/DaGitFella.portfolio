@@ -1,6 +1,7 @@
 <template>
   <div
-    class="w-full overflow-x-hidden h-fit my-8 lg:my-0 py-5 border border-slate-300 rounded-xl"
+    class="w-full flex justify-center overflow-x-hidden h-fit my-8 
+    lg:my-0 py-5 border border-slate-300 rounded-xl"
   >
     <LazyClientOnly>
       <Carousel
@@ -11,7 +12,7 @@
         dir="left-to-right"
         :pause-autoplay-on-hover="true"
         transitionEasing="ease-in-out"
-        class="max-w-80 lg:max-w-full w-full"
+        class="max-w-70 lg:max-w-full w-full"
       >
         <slide v-for="skill in skills" :key="skill.skill">
           <LazyStatsItem

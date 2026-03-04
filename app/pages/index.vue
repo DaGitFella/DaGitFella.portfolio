@@ -1,13 +1,12 @@
 <template>
-  <main class="h-full w-full">
+  <main class="flex items-center h-screen w-full">
     <div
       class="dot-grid h-screen w-screen absolute -z-20 opacity-10 left-0 top-0"
     ></div>
     <div class="grid grid-cols-5 justify-between">
       <section class="flex flex-col col-span-3 gap-10">
         <article
-          class="flex flex-col border border-slate-500 
-          rounded-xl overflow-hidden dark:border-slate-800"
+          class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800"
         >
           <LazyWindowBar :show-actions="false" title="~/davi-portfolio" />
           <div class="flex flex-col gap-5 py-5 px-7.5">
@@ -75,10 +74,7 @@
         <div class="relative">
           <img src="~/assets/images/binux_1.png" alt="Tux image" class="w-96" />
           <div
-            class="h-140 w-140 
-            bg-[linear-gradient(to_bottom,#C6D2FF_50%,transparent_100%)] 
-            absolute blur-3xl rounded-full -z-1 right-1/2 transform translate-x-1/2 top-1/2 
-            -translate-y-1/2 dark:bg-[linear-gradient(to_bottom,#A4F4CF_50%,transparent_100%)]"
+            class="h-140 w-140 bg-[linear-gradient(to_bottom,#C6D2FF_50%,transparent_100%)] absolute blur-3xl rounded-full -z-1 right-1/2 transform translate-x-1/2 top-1/2 -translate-y-1/2 dark:bg-[linear-gradient(to_bottom,#A4F4CF_50%,transparent_100%)]"
           ></div>
         </div>
       </figure>
