@@ -7,7 +7,7 @@
       <Carousel
         :autoplay="3000"
         :wrap-around="true"
-        :transition="5000"
+        :transition="2000"
         snap-align="center"
         dir="left-to-right"
         :pause-autoplay-on-hover="true"
