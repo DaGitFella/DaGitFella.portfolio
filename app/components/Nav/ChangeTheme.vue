@@ -4,7 +4,7 @@
     hover:bg-slate-200 transition-colors duration-500 ease-in-out p-2.5 rounded-br-xl rounded-tr-xl shadow-base
     dark:bg-slate-900 dark:border-slate-800 dark:hover:bg-slate-800 dark:shadow-white-glow"
   >
-    <Icon name="heroicons:moon" class="text-2xl" />
+    <Icon :name="icon" class="text-2xl" />
   </button>
 </template>
 
@@ -13,4 +13,9 @@ const colorMode = useColorMode();
 const toggleDark = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
 }
+
+const icon = computed(() => {
+  return colorMode.value === 'dark' ? 'heroicons:moon' : 'heroicons:sun';
+})
+
 </script>
