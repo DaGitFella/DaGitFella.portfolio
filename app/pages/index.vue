@@ -40,20 +40,20 @@
           </div>
         </article>
         <aside class="flex flex-col gap-7.5">
-          <div class="flex items-center gap-5">
+          <div class="flex flex-col lg:flex-row items-center gap-5">
             <LazyButtonOutlined
               text="Download CV"
               :showIcon="true"
               :IconName="'heroicons:arrow-down-circle'"
               class="w-full lg:w-fit"
             />
-            <div class="hidden md:flex gap-2.5">
+            <div class="flex gap-2.5">
               <LazyButtonContact />
               <LazyButtonContact IconName="tabler:brand-linkedin" />
               <LazyButtonContact IconName="tabler:mail" />
             </div>
           </div>
-          <div class="flex md:hidden gap-2.5 w-full md:w-fit flex-wrap justify-center">
+          <div class="hidden lg:flex gap-2.5 w-full md:w-fit flex-wrap justify-center">
             <LazyButtonBrand
               text="Angular"
               class="text-red-700 bg-red-50 border-red-200"
@@ -73,7 +73,7 @@
           </div>
         </aside>
       </section>
-      <figure class="hidden md:hidden items-center xl:col-span-4 2xl:col-span-5 col-span-1 justify-end">
+      <figure class="hidden md:hidden lg:flex items-center xl:col-span-4 2xl:col-span-5 col-span-1 justify-end">
         <div class="relative">
           <img src="~/assets/images/binux_1.png" alt="Tux image" class="xl:w-70 2xl:w-96" />
           <div

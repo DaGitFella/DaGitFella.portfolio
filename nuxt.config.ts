@@ -23,7 +23,8 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     '@nuxt/image',
     '@nuxtjs/color-mode',
-    'vue3-carousel-nuxt'
+    'vue3-carousel-nuxt',
+    '@nuxtjs/device'
   ],
   fonts: {
     defaults: {

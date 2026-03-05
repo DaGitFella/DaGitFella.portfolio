@@ -12,7 +12,6 @@
       <LazyNavTranslate />
     </div>
   </nav>
-  <slot />
 </template>
 
 <script setup lang="ts">
