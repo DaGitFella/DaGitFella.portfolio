@@ -6,7 +6,7 @@
       dark:bg-slate-900 dark:border-slate-800 dark:shadow-white-glow"
     >
       <li v-for="item in sidebarItems" :key="item.name" class="w-fit">
-        <LazyNavItem :item="item" />
+        <LazyNavItemMobile :item="item" />
       </li>
     </ul>
   </nav>
