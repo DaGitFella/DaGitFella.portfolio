@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col items-center w-full pt-15 gap-8 2xl:gap-12.5 h-fit">
+  <main class="flex flex-col items-center w-full pb-20 lg:pb-0 pt-15 gap-8 2xl:gap-12.5 h-fit">
     <div class="flex flex-col items-center gap-5">
       <h1
         class="flex items-center font-bold text-indigo-700 
