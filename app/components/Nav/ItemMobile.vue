@@ -4,12 +4,12 @@
     class="flex flex-col items-center justify-center text-slate-500 
     h-full w-full transition-colors duration-500 ease-in-out "
     :class="{
-      'text-indigo-900 dark:text-emerald-900':
+      'text-indigo-500 dark:text-emerald-500 font-regular':
         isSelected(item.link),
     }"
   >
-    <Icon :name="item.icon" class="text-xl" />
-    <p class="text-[12px] font-body font-regular">{{ translateName(item.name) }}</p>
+    <Icon :name="item.icon" class="text-2xl" />
+    <p class="text-[12px] font-body">{{ translateName(item.name) }}</p>
   </NuxtLink>
 </template>
 
