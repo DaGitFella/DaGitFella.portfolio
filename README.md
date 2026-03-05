@@ -20,6 +20,11 @@ This project follows the modern Nuxt 4 directory structure, moving the core appl
 * **Deployment:** Optimized for Vercel/Netlify with **Edge Rendering**.
 
 ---
+## 🌐 Available on vercel
+
+check it out on: https://portfolio-pj7y.vercel.app/help
+
+---
 
 ## ✨ Key Technical Features
 
