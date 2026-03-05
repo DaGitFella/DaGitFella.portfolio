@@ -41,7 +41,7 @@ Ensure you have [Node.js](https://nodejs.org/) (v18.10+) installed.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/portfolio-v4.git](https://github.com/your-username/portfolio-v4.git)
+    git clone https://github.com/DaGitFella/portfolio
     ```
 2.  **Install dependencies:**
     ```bash
