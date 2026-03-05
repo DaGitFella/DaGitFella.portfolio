@@ -5,7 +5,7 @@
     px-12.5 py-10 bg-slate-100 outline-slate-200 outline
     shadow-base dark:bg-slate-900 dark:outline-slate-800 text-slate-950
     dark:text-slate-50 cursor-pointer dark:shadow-white-glow hover:shadow-indigo-layered
-    hover:outline-[3px] hover:outline-indigo-500 dark:hover:outline-emerald-500
+    lg:hover:outline-[3px] lg:hover:outline-indigo-500 dark:lg:hover:outline-emerald-500
     dark:hover:shadow-emerald-layered"
   >
     <div class="flex flex-col gap-6 2xl:gap-6 lg:gap-4">

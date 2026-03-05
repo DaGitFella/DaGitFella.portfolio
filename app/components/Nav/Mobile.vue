@@ -5,7 +5,7 @@
       border-slate-200 border rounded-tl-xl rounded-tr-xl shadow-base 
       dark:bg-slate-900 dark:border-slate-800 dark:shadow-white-glow"
     >
-      <li v-for="item in sidebarItems" :key="item.name" class="w-full h-full flex items-center justify-center">
+      <li v-for="item in sidebarItems" :key="item.name" class="w-18.5 h-full flex items-center justify-center">
         <LazyNavItemMobile :item="item" />
       </li>
     </ul>

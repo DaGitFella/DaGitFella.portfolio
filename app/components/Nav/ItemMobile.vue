@@ -27,7 +27,7 @@ const translateName = (name: string) => {
     About: "Sobre",
     Projects: "Projetos",
     Help: "Ajuda",
-    Skills: "Habilidades",
+    Skills: "Hab.",
     Contact: "Contato",
   };
   return translations[name] || name;
