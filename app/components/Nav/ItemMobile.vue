@@ -2,14 +2,14 @@
   <NuxtLink
     :to="item.link"
     class="flex flex-col items-center justify-center text-slate-500 
-    h-full w-full hover:text-slate-950 transition-colors duration-500 ease-in-out dark:hover:text-slate-50"
+    h-full w-full transition-colors duration-500 ease-in-out "
     :class="{
-      'text-indigo-500 dark:text-emerald-500':
+      'text-indigo-900 dark:text-emerald-900':
         isSelected(item.link),
     }"
   >
     <Icon :name="item.icon" class="text-xl" />
-    <p class="text-sm font-medium">{{ translateName(item.name) }}</p>
+    <p class="text-[12px] font-body font-regular">{{ translateName(item.name) }}</p>
   </NuxtLink>
 </template>
 
