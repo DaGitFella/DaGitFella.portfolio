@@ -70,8 +70,9 @@ Ensure you have [Node.js](https://nodejs.org/) (v18.10+) installed.
 ├── app/
 │   ├── components/      # UI Elements (TechBadge.vue, Navbar components)
 │   ├── layouts/         # Layout Switcher (default.vue)
+|   ├── composables/     # Reusable logic
 │   ├── pages/           # File-based routing
 │   └── app.vue          # Main Entry point
-├── server/              # Server-side logic/API
+|
 ├── public/              # Static assets (Resume, Favicon)
 └── nuxt.config.ts       # Nuxt 4 configuration
