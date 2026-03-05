@@ -21,4 +21,14 @@
 
 const { services } = useUseService();
 
+useHead({
+  title: 'Serviços - Davi Bezerra',
+  meta: [
+    {
+      name: 'description',
+      content: 'Descubra os serviços que ofereço como desenvolvedor fullstack. Estou aqui para ajudar a transformar suas ideias em realidade.',
+    },
+  ],
+});
+
 </script>

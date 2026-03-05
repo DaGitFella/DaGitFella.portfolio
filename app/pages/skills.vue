@@ -35,4 +35,14 @@ const skills = reactive<Skill[]>([
   },
 ]);
 
+useHead({
+  title: 'Habilidades - Davi Bezerra',
+  meta: [
+    {
+      name: 'description',
+      content: 'Explore as tecnologias e ferramentas que domino como desenvolvedor fullstack. De frontend a backend, estou equipado para criar soluções completas e inovadoras.',
+    },
+  ],
+});
+
 </script>

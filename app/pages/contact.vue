@@ -34,4 +34,16 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+useHead({
+  title: 'Contato - Davi Bezerra',
+  meta: [
+    {
+      name: 'description',
+      content: 'Entre em contato comigo para discutir projetos, oportunidades ou apenas para dizer oi! Estou sempre aberto a novas conexões e colaborações.',
+    },
+  ],
+});
+
+</script>

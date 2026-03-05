@@ -17,4 +17,15 @@ definePageMeta({
 });
 
 const { projects } = useProject();
+
+useHead({
+  title: 'Projetos - Davi Bezerra',
+  meta: [
+    {
+      name: 'description',
+      content: 'Explore meus projetos mais recentes e inovadores. Cada um reflete minha paixão por desenvolvimento e minha dedicação em criar soluções impactantes.',
+    },
+  ],
+});
+
 </script>

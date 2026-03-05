@@ -89,7 +89,21 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  title: "Sobre",
+
+useHead({
+  title: 'Davi - Desenvolvedor Fullstack',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Portfólio de Davi, desenvolvedor fullstack com experiência em Python e JavaScript. Confira meus projetos e habilidades.',
+    },
+    {
+      name: 'keywords',
+      content:
+        'Davi, portfólio, desenvolvedor fullstack, Python, JavaScript, projetos, habilidades',
+    },
+  ],
 });
+
 </script>
