@@ -1,75 +1,85 @@
-# Nuxt Minimal Starter
+Since you are building with Nuxt 4, your README should reflect the modern Layers architecture and the app/ directory convention. This version of Nuxt is all about "cleaner roots" and better performance, which is a great selling point for a developer portfolio.
+🚀 My Portfolio | Nuxt 4
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to my personal portfolio. This project is built using Nuxt 4, leveraging the latest features in Vue.js to create a high-performance, accessible, and adaptive web experience.
+🏗️ The Nuxt 4 Architecture
 
-## Setup
+This project follows the new Nuxt 4 directory structure, moving the core application logic into the app/ folder to separate concerns from configuration and server-side logic.
 
-Make sure to install dependencies:
+    app/: Contains the heart of the frontend (Pages, Components, Layouts).
 
-```bash
-# npm
-npm install
+    server/: Handles API routes and server-side middleware.
 
-# pnpm
-pnpm install
+    public/: Static assets like my resume and profile photos.
 
-# yarn
-yarn install
+🛠️ Tech Stack
 
-# bun
-bun install
-```
+    Framework: Nuxt 4 (Vue 3 + Vite)
 
-## Development Server
+    Styling: Tailwind CSS (Utility-first design)
 
-Start the development server on `http://localhost:3000`:
+    Intelligence: @nuxtjs/device for environment-aware UI.
 
-```bash
-# npm
-npm run dev
+    Deployment: Optimized for Vercel/Netlify with Edge Rendering.
 
-# pnpm
-pnpm dev
+✨ Key Technical Features
+📱 Adaptive Navigation (Device-Specific)
 
-# yarn
-yarn dev
+Unlike standard responsive design that simply hides elements, this portfolio uses Conditional Component Rendering based on the user's device.
 
-# bun
-bun run dev
-```
+    NavbarDesktop: Features hover-based mega-menus and rich transitions.
 
-## Production
+    NavbarMobile: A lightweight, touch-optimized drawer that reduces DOM weight for mobile users.
 
-Build the application for production:
+🚄 Performance & DX
 
-```bash
-# npm
-npm run build
+    Disabled Mobile Transitions: Page transitions are programmatically disabled on mobile to provide an instantaneous, app-like feel.
 
-# pnpm
-pnpm build
+    Smart Layouts: Using the Nuxt 4 layout system to maintain state across page navigations while swapping navigation components seamlessly.
 
-# yarn
-yarn build
+    Type Safety: Fully written in TypeScript for robust component interfaces.
 
-# bun
-bun run build
-```
+🚀 Getting Started
 
-Locally preview production build:
+Ensure you have Node.js (v18.10+) installed.
 
-```bash
-# npm
-npm run preview
+    Clone the repository:
+    Bash
 
-# pnpm
-pnpm preview
+    git clone https://github.com/your-username/portfolio-v4.git
 
-# yarn
-yarn preview
+    Install dependencies:
+    Bash
 
-# bun
-bun run preview
-```
+    npm install
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+    Run in development mode:
+    Bash
+
+    npm run dev
+
+    Build for production:
+    Bash
+
+    npm run build
+
+📁 Project Overview
+Plaintext
+
+.
+├── app/
+│   ├── components/      # UI Elements (TechBadge.vue, etc.)
+│   ├── layouts/         # Layout Switcher (NavbarMobile vs NavbarDesktop)
+│   ├── pages/           # File-based routing
+│   └── app.vue          # Main Entry point
+├── public/              # Static assets
+├── nuxt.config.ts       # Nuxt 4 configuration (Future: { compatibilityVersion: 4 })
+└── tailwind.config.js   # Custom design tokens
+
+📬 Contact
+
+I'm currently open to new opportunities and collaborations!
+
+    LinkedIn: Your Profile
+
+    Email: your.email@example.com
