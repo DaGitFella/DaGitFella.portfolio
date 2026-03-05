@@ -53,17 +53,10 @@
 </template>
 
 <script setup lang="ts">
-export interface Project {
-  title: string;
-  description: string;
-  image: string;
-  techStack: string[];
-  github: string;
-  showLiveDemo?: boolean;
-  liveDemo?: string;
-}
+import type { Project } from "~/composables/useProject";
 
 const props = defineProps<{
   project: Project;
 }>();
+
 </script>

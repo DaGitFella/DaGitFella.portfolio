@@ -15,37 +15,5 @@
 </template>
 
 <script setup lang="ts">
-interface NavItem {
-  name: string;
-  icon: string;
-  link: string;
-}
-
-const sidebarItems = reactive<NavItem[]>([
-  {
-    name: "About",
-    icon: "heroicons:book-open",
-    link: "/",
-  },
-  {
-    name: "Projects",
-    icon: "heroicons:folder-open",
-    link: "/projects",
-  },
-  {
-    name: "Skills",
-    icon: "heroicons:code-bracket",
-    link: "/skills",
-  },
-  {
-    name: "Help",
-    icon: "heroicons:sparkles",
-    link: "/help",
-  },
-  {
-    name: "Contact",
-    icon: "heroicons:chat-bubble-left",
-    link: "/contact",
-  },
-]);
+const { sidebarItems } = useNavigation();
 </script>

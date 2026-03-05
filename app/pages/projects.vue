@@ -11,60 +11,10 @@
 </template>
 
 <script setup lang="ts">
-import type { Project } from "~/components/Card/Project.vue";
 
 definePageMeta({
   title: "Projetos",
 });
 
-const projects = reactive<Project[]>([
-  {
-    title: "Projeto 1",
-    description: "Descrição do projeto 1",
-    image: "teste.png",
-    techStack: ["Vue.js", "TypeScript", "Tailwindcss", "Tailwindcss", "Tailwindcss"],
-    github: "",
-    showLiveDemo: true,
-  },
-  {
-    title: "Projeto 1",
-    description: "Descrição do projeto 1",
-    image: "teste.png",
-    techStack: ["Vue.js", "TypeScript", "Tailwindcss", "Tailwindcss", "Tailwindcss"],
-    github: "",
-    showLiveDemo: true,
-  },
-  {
-    title: "Projeto 1",
-    description: "Descrição do projeto 1",
-    image: "teste.png",
-    techStack: ["Vue.js", "TypeScript", "Tailwindcss", "Tailwindcss", "Tailwindcss"],
-    github: "",
-    showLiveDemo: true,
-  },
-  {
-    title: "Projeto 1",
-    description: "Descrição do projeto 1",
-    image: "teste.png",
-    techStack: ["Vue.js", "TypeScript", "Tailwindcss", "Tailwindcss", "Tailwindcss"],
-    github: "",
-    showLiveDemo: true,
-  },
-  {
-    title: "Projeto 1",
-    description: "Descrição do projeto 1",
-    image: "teste.png",
-    techStack: ["Vue.js", "TypeScript", "Tailwindcss", "Tailwindcss", "Tailwindcss"],
-    github: "",
-    showLiveDemo: true,
-  },
-  {
-    title: "Projeto 1",
-    description: "Descrição do projeto 1",
-    image: "teste.png",
-    techStack: ["Vue.js", "TypeScript", "Tailwindcss", "Tailwindcss", "Tailwindcss"],
-    github: "",
-    showLiveDemo: true,
-  },
-]);
+const { projects } = useProject();
 </script>
