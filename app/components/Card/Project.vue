@@ -13,29 +13,30 @@
         <img
         :src="project.image"
         :alt="project.title"
-        class="w-full h-55 md:h-40 2xl:h-55 object-cover transition-transform duration-300 ease-in-out
-        group-hover:scale-125"
+        class="w-full h-50 2xl:h-60 object-cover transition-transform duration-300 ease-in-out
+        group-hover:scale-125 object-top"
       />
       </div>
     </div>
-    <div class="px-9 pb-10 h-full flex flex-col gap-7.5">
+    <div class="px-9 pb-10 h-115 lg:h-100 flex flex-col justify-between">
       <div class="card-content flex flex-col gap-5">
         <div class="card-text flex flex-col gap-5">
           <div class="card-title font-semibold font-poppins gap-2.5 text-xl lg:text-[28px] flex">
             <span class="text-indigo-700 dark:text-emerald-500">$</span>
             <h2 class="font-[poppins]">{{ project.title }}</h2>
           </div>
-          <p class="text-slate-400 text-sm lg:text-xl">{{ project.description }}</p>
+          <p class="text-slate-400 text-sm text-[16px] 2xl:text-lg">{{ project.description }}</p>
         </div>
         <div class="grid grid-cols-2 lg:grid-cols-3  gap-2.5 h-fit w-full">
           <LazyCardTechBadge v-for="tech in project.techStack" :tech="tech" type="project" />
         </div>
       </div>
-      <div class="card-bottom grid grid-cols-2 lg:flex gap-3.5">
+      <div class="card-bottom flex gap-3.5">
         <LazyButtonCard
           text="GitHub"
           IconName="tabler:brand-github"
           :show-icon="true"
+          :link="project.github"
           class="bg-indigo-950 text-indigo-50 hover:bg-indigo-900
           dark:bg-emerald-950 dark:text-emerald-50 dark:hover:bg-emerald-900"
         />
@@ -43,6 +44,7 @@
           v-if="project.showLiveDemo"
           text="Live"
           :show-icon="true"
+          :link="project.liveDemo"
           IconName="tabler:external-link"
           class="bg-indigo-500 text-indigo-50 hover:bg-indigo-400
           dark:bg-emerald-500 dark:text-emerald-50 dark:hover:bg-emerald-300"

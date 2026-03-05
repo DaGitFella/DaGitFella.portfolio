@@ -18,8 +18,14 @@
           <div class="flex flex-col gap-2.5">
             <span class="text-slate-400 text-sm lg:text-[16px]"># Links rápidos</span>
             <div class="flex flex-col gap-4">
-              <FormsLink to="github.com/DaGitFella" />
-              <FormsLink to="linkedin.com/in/davi-lucas-510686283" />
+              <FormsLink 
+              link="github.com/DaGitFella"
+              name="GitHub"
+              />
+              <FormsLink 
+              link="linkedin.com/in/davi-lucas-510686283" 
+              name="LinkedIn"
+              />
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 
-const { services } = useUseService();
+const { services }  = useHelp();
 
 useHead({
   title: 'Serviços - Davi Bezerra',

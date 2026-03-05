@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group flex flex-col font-body gap-7.5 rounded-xl lg:h-128 2xl:h-140
+    class="group flex flex-col font-body gap-7.5 rounded-xl lg:h-128 2xl:h-145
     transition-colors duration-300 ease-in-out
     px-12.5 py-10 bg-slate-100 outline-slate-200 outline
     shadow-base dark:bg-slate-900 dark:outline-slate-800 text-slate-950
@@ -11,7 +11,7 @@
     <div class="flex flex-col gap-6 2xl:gap-6 lg:gap-4">
       <div class="flex flex-col gap-6 2xl:gap-6 lg:gap-3">
         <LazyCardIcon
-          :IconName="help.icon || 'tabler:help'"
+          :icon="help.icon"
           class="w-12 h-12 text-indigo-700 dark:text-emerald-500"
         />
         <h2 class="text-xl md:text-2xl 2xl:text-4xl font-bold">
@@ -38,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Help } from "~/composables/useService";
+import type { Help } from "~/composables/useHelp";
 
 defineProps<{
   help: Help
