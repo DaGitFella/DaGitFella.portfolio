@@ -57,9 +57,10 @@ const handleSubmit = async () => {
       replyTo: formData.email,
       subject: `Mensagem de ${formData.name}`,
       text: formData.message,
-      html: `<p><strong>From:</strong> ${formData.email}</p>
-           <p><strong>Message:</strong> ${formData.message}</p>`
     });
+    formData.name = '';
+    formData.email = '';
+    formData.message = '';
   } catch (error) {
     console.error('Erro ao enviar email:', error);
   }
