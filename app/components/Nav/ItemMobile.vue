@@ -15,6 +15,7 @@
 
 <script setup lang="ts">
 import type { NavItem } from "~/composables/useNavigation";
+
 const route = useRoute();
 
 const isSelected = (link: string) => {
@@ -22,16 +23,6 @@ const isSelected = (link: string) => {
   return link === current;
 };
 
-const translateName = (name: string) => {
-  const translations: Record<string, string> = {
-    About: "Sobre",
-    Projects: "Projetos",
-    Help: "Ajuda",
-    Skills: "Hab.",
-    Contact: "Contato",
-  };
-  return translations[name] || name;
-};
 
 defineProps<{
   item: NavItem;

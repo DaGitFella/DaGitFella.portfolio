@@ -4,6 +4,17 @@ export interface NavItem {
   link: string;
 }
 
+export const translateName = (name: string) => {
+  const translations: Record<string, string> = {
+    About: "Sobre",
+    Projects: "Projetos",
+    Help: "Ajuda",
+    Skills: "Hab.",
+    Contact: "Contato",
+  };
+  return translations[name] || name;
+};
+
 export const useNavigation = () => {
   const sidebarItems = reactive<NavItem[]>([
     {
