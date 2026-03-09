@@ -61,6 +61,7 @@ const handleSubmit = async () => {
     formData.name = '';
     formData.email = '';
     formData.message = '';
+    alert('Email enviado com sucesso!');
   } catch (error) {
     console.error('Erro ao enviar email:', error);
   }
