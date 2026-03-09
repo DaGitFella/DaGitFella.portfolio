@@ -48,9 +48,11 @@
               class="w-full lg:w-fit"
             />
             <div class="flex gap-2.5">
-              <LazyButtonContact />
-              <LazyButtonContact IconName="tabler:brand-linkedin" />
-              <LazyButtonContact IconName="tabler:mail" />
+              <LazyButtonContact 
+                link="https://github.com/DaGitFella"
+              />
+              <LazyButtonContact IconName="tabler:brand-linkedin" link="https://www.linkedin.com/in/davi-lucas-510686283/" />
+              <LazyButtonContact IconName="tabler:mail" link="mailto:davibezerra123457@gmail.com" />
             </div>
           </div>
           <div class="hidden lg:flex gap-2.5 w-full md:w-fit flex-wrap justify-center">
