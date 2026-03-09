@@ -44,6 +44,8 @@
             <LazyButtonOutlined
               text="Download CV"
               :showIcon="true"
+              to="/downloads/curriculo.pdf"
+              name="curriculo_davi.pdf"
               :IconName="'heroicons:arrow-down-circle'"
               class="w-full lg:w-fit"
             />
