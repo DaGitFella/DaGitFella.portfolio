@@ -10,7 +10,7 @@
     >
       <div class="flex flex-col-reverse pb-8 lg:py-0 lg:grid lg:grid-cols-2 w-full gap-8 lg:gap-25">
         <div class="flex flex-col gap-7.5">
-          <FormsInfo
+          <LazyFormsInfo
             dev-name="davi"
             dev-email="davibezerra123457@gmail.com"
             dev-loc="Natal/RN - Brasil"
@@ -18,22 +18,22 @@
           <div class="flex flex-col gap-2.5">
             <span class="text-slate-400 text-sm lg:text-[16px]"># Links rápidos</span>
             <div class="flex flex-col gap-4">
-              <FormsLink 
-              link="github.com/DaGitFella"
+              <LazyFormsLink 
+              link="https://github.com/DaGitFella"
               name="GitHub"
               />
-              <FormsLink 
-              link="linkedin.com/in/davi-lucas-510686283" 
+              <LazyFormsLink 
+              link="https://linkedin.com/in/davi-lucas-510686283" 
               name="LinkedIn"
               />
             </div>
           </div>
         </div>
-        <form class="flex flex-col gap-7.5">
-          <FormsInput type="name" />
-          <FormsInput type="email" />
-          <FormsTextArea />
-          <FormsButton />
+        <form @submit.prevent="handleSubmit" class="flex flex-col gap-7.5">
+          <LazyFormsInput v-model="formData.name" type="name" />
+          <LazyFormsInput v-model="formData.email" type="email" />
+          <LazyFormsTextArea v-model="formData.message" />
+          <LazyFormsButton />
         </form>
       </div>
     </NuxtLayout>
@@ -41,6 +41,29 @@
 </template>
 
 <script setup lang="ts">
+
+const formData = reactive({
+  name: '',
+  email: '',
+  message: '',
+});
+
+const mail = useMail();
+
+const handleSubmit = async () => {
+  try {
+    await mail.send({
+      from: 'davibezerra123457@gmail.com',
+      replyTo: formData.email,
+      subject: `Mensagem de ${formData.name}`,
+      text: formData.message,
+      html: `<p><strong>From:</strong> ${formData.email}</p>
+           <p><strong>Message:</strong> ${formData.message}</p>`
+    });
+  } catch (error) {
+    console.error('Erro ao enviar email:', error);
+  }
+};
 
 useHead({
   title: 'Contato - Davi Bezerra',
