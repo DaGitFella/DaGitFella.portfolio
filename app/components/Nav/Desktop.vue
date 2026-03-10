@@ -13,7 +13,7 @@
     </ul>
     <div class="flex flex-col gap-5">
       <LazyNavChangeTheme />
-      <LazyNavTranslate />
+      <LazyNavTranslate class="hidden" />
     </div>
   </nav>
 </template>
