@@ -16,7 +16,7 @@
               xl:text-2xl 2xl:text-4xl w-full lg:w-fit rounded-xl md:px-7.5 py-1.5 
               dark:text-emerald-500 font-title md:text-2xl"
             >
-              > $desenvolverdor_fullstack_
+              {{ displayText }}<span class="animate-pulse">|</span>
             </h2>
             <p class="md:text-base lg:text-xl max-w-prose">
               Desenvolvedor com 3+ anos de experiência em
@@ -79,7 +79,8 @@
       </section>
       <figure class="hidden md:hidden lg:flex items-center xl:col-span-4 2xl:col-span-5 col-span-1 justify-end">
         <div class="relative">
-          <img src="~/assets/images/binux_1.png" alt="Tux image" class="xl:w-70 2xl:w-96" />
+          <img v-motion-slide-visible-bottom
+           src="~/assets/images/binux_1.png" alt="Tux image" class="xl:w-70 2xl:w-96 " />
           <div
             class="xl:h-70 xl:w-70 2xl:h-120 2xl:w-120 
             bg-[linear-gradient(to_bottom,#C6D2FF_50%,transparent_100%)] 
@@ -93,6 +94,8 @@
 </template>
 
 <script setup lang="ts">
+
+const { displayText, isCompleted } = useTypewriter('> $desenvolverdor_fullstack_', 80);
 
 useHead({
   title: 'Davi - Desenvolvedor Fullstack',

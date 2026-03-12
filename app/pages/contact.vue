@@ -9,7 +9,8 @@
       description="# Disponível para novos projetos e oportunidades"
     >
       <div class="flex flex-col-reverse pb-8 lg:py-0 lg:grid lg:grid-cols-2 w-full gap-8 lg:gap-25">
-        <div class="flex flex-col gap-7.5">
+        <div v-motion-slide-visible-left
+         class="flex flex-col gap-7.5">
           <LazyFormsInfo
             dev-name="davi"
             dev-email="davibezerra123457@gmail.com"
@@ -29,7 +30,8 @@
             </div>
           </div>
         </div>
-        <form @submit.prevent="handleSubmit" class="flex flex-col gap-7.5">
+        <form v-motion-slide-visible-right
+         @submit.prevent="handleSubmit" class="flex flex-col gap-7.5">
           <LazyFormsInput v-model="formData.name" type="name" />
           <LazyFormsInput v-model="formData.email" type="email" />
           <LazyFormsTextArea v-model="formData.message" />
