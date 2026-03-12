@@ -31,8 +31,11 @@
           <LazyCardTechBadge v-for="tech in project.techStack" :tech="tech" type="project" />
         </div>
       </div>
-      <div class="card-bottom flex gap-3.5">
+      <div 
+      
+      class="card-bottom flex gap-3.5">
         <LazyButtonCard
+          @click.stop
           text="GitHub"
           IconName="tabler:brand-github"
           :show-icon="true"
@@ -42,6 +45,7 @@
         />
         <LazyButtonCard
           v-if="project.showLiveDemo"
+          @click.stop
           text="Live"
           :show-icon="true"
           :link="project.liveDemo"
