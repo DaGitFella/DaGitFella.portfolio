@@ -95,7 +95,7 @@
 
 <script setup lang="ts">
 
-const { displayText, isCompleted } = useTypewriter('> $desenvolverdor_fullstack_', 80);
+const { displayText } = useTypewriter('> $desenvolverdor_fullstack_', 80);
 
 useHead({
   title: 'Davi - Desenvolvedor Fullstack',

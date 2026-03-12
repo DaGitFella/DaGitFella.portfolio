@@ -7,8 +7,8 @@
         rounded-lg py-1.5 px-7.5 w-fit lg:text-4xl 2xl:text-6xl text-2xl md:text-3xl"
       >
         <span>></span>
-        {{ displayText }}<span v-if="!isCompleted" class="animate-pulse">|</span>
-        <span v-if="isCompleted" class="animate-pulse">|</span>
+        {{ displayText }}<span class="animate-pulse">|</span>
+  
       </h1>
       <p class="lg:w-152 w-90 lg:text-xl 2xl:text-xl text-sm text-center text-slate-400">{{ props.description }}</p>
     </div>
@@ -23,7 +23,7 @@ const props = defineProps<{
   description?: string;
 }>();
 
-const { displayText, isCompleted } = useTypewriter(props.title || '', 100);
+const { displayText } = useTypewriter(props.title || '', 100);
 </script>
 
 <style scoped>

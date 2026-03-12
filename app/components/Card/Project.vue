@@ -1,5 +1,5 @@
 <template>
-  <div
+  <div @click="open"
     class="group outline flex flex-col gap-7.5 rounded-xl overflow-hidden transition-colors
     duration-300 ease-in-out bg-slate-100 outline-slate-200 
     shadow-base dark:bg-slate-900 dark:outline-slate-800 text-slate-950 
@@ -60,5 +60,13 @@ import type { Project } from "~/composables/useProject";
 const props = defineProps<{
   project: Project;
 }>();
+
+const emit = defineEmits<{
+  (event: 'openModal'): void;
+}>();
+
+function open() {
+  emit('openModal');
+}
 
 </script>
