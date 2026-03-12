@@ -1,23 +1,22 @@
 <template>
   <div
     @click="close"
-    class="w-screen h-screen fixed top-0 lg:px-30 2xl:px-50 flex items-center justify-center z-50 bg-white/10 backdrop-blur-sm cursor-pointer"
+    class="w-screen h-screen fixed top-0 p-5 py-50 lg:px-30 2xl:px-50 flex items-center justify-center z-50 bg-white/10 backdrop-blur-sm cursor-pointer"
   >
     <section
-      class="bg-slate-100 dark:bg-slate-900 rounded-lg p-12.5 lg:grid grid-cols-2 gap-10 
-      overflow-scroll lg:overflow-hidden"
+      class="bg-slate-100 flex flex-col-reverse max-h-180 overflow-scroll dark:bg-slate-900 rounded-lg p-9 lg:p-12.5 lg:grid lg:grid-cols-2 gap-10"
     >
-      <figure class="flex flex-col justify-between h-full">
+      <figure class="flex flex-col gap-3 lg:justify-between lg:h-full">
         <img
           src="~/assets/images/portfolio.png"
           alt="Tux image"
-          class="w-162.5 border-3 rounded-xl border-indigo-700 dark:border-emerald-500"
+          class=" lg:w-162.5 border-3 rounded-xl border-indigo-700 dark:border-emerald-500"
         />
         <div class="flex flex-col gap-2.5">
           <p class="text-lg font-title text-indigo-700 dark:text-emerald-500">
             # Links
           </p>
-          <div class="flex gap-3">
+          <div class="flex flex-col lg:flex-row gap-3">
             <LazyButtonCard
               @click.stop
               class="border border-indigo-700 dark:border-emerald-500 text-indigo-700 dark:text-emerald-500 hover:bg-indigo-700 hover:text-indigo-50 dark:hover:bg-emerald-500 dark:hover:text-emerald-50"
@@ -50,7 +49,7 @@
       >
         <div class="flex flex-col gap-5">
           <p class="font-title font-bold text-lg">> descrição</p>
-          <p class="text-[16px] font-body lg:overflow-scroll lg:max-h-60 2xl:max-h-75">
+          <p class="text-[16px] font-body overflow-scroll max-h-30 lg:max-h-60 2xl:max-h-75">
             <span class="font-bold">$</span> Enfatiza-se que a
             interoperabilidade de hardware causa uma diminuição do throughput da
             gestão de risco. Assim mesmo, a valorização de fatores subjetivos
