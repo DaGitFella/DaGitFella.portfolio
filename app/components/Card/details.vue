@@ -9,11 +9,24 @@
       class="bg-slate-100 flex flex-col-reverse max-h-180 overflow-scroll dark:bg-slate-900 rounded-lg p-9 lg:p-12.5 lg:grid lg:grid-cols-2 gap-10 shadow-indigo-layered dark:shadow-emerald-layered"
     >
       <figure class="flex flex-col gap-3 lg:justify-between lg:h-full">
-        <img
+        <NuxtImg
           :src="project?.image"
           alt="Tux image"
-          class="lg:w-162.5 border-3 rounded-xl border-indigo-700 dark:border-emerald-500"
+          class="lg:w-162.5 border-3 rounded-xl border-indigo-700 dark:border-emerald-500 cursor-zoom-in"
+          @click.stop="toggleImageExpand"
         />
+        <div
+          v-if="isImageExpanded"
+          @click="isImageExpanded = false"
+          class="fixed inset-0 z-60 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-5"
+        >
+          <NuxtImg
+            :src="project?.image"
+            alt="Tux image expanded"
+            class="h-[90vh] w-[90vw] rounded-2xl border-2 
+            border-indigo-500 dark:border-emerald-500 shadow-2xl"
+          />
+        </div>
         <div class="flex flex-col gap-2.5">
           <p class="text-lg font-title text-indigo-700 dark:text-emerald-500">
             # Links
@@ -104,6 +117,12 @@ defineProps<{
 const emit = defineEmits<{
   (event: "closeModal"): void;
 }>();
+
+const isImageExpanded = ref(false);
+
+function toggleImageExpand() {
+  isImageExpanded.value = !isImageExpanded.value;
+}
 
 function close() {
   emit("closeModal");
