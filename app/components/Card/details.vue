@@ -17,8 +17,8 @@
         />
         <div
           v-if="isImageExpanded"
-          @click="isImageExpanded = false"
-          class="fixed inset-0 z-60 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-5"
+          @click.stop="isImageExpanded = false"
+          class="fixed inset-0 z-60 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-5 cursor-zoom-out"
         >
           <NuxtImg
             :src="project?.image"
