@@ -21,7 +21,7 @@ export const useProject = () => {
       resume:
         "Diciclopédia matemática digital. Adaptação de livro autoral com definições, exemplos e ilustrações interativas.",
       description:
-        "Projeto de extensão do IFRN campus Natal Zona Norte, desenvolvido em equipe. O Matemates é uma diciclopédia matemática digital, que tem por objetivo apresentar definições, exemplos e ilustrações interativas sobre diversos temas matemáticos. O projeto é uma adaptação de um livro autoral, e apresenta uma interface intuitiva e acessível para estudantes e entusiastas da matemática. \
+        "Trabalho de conclusão de curso do IFRN campus Natal Zona Norte, desenvolvido em equipe. O Matemates é uma diciclopédia matemática digital, que tem por objetivo apresentar definições, exemplos e ilustrações interativas sobre diversos temas matemáticos. O projeto é uma adaptação de um livro autoral, e apresenta uma interface intuitiva e acessível para estudantes e entusiastas da matemática. \
         Atuei majoritariamente no desenvolvimento do frontend, utilizando Django e Angular para criar uma experiência de usuário fluida e interativa. O projeto também conta com um backend robusto, desenvolvido por @isaque-dantas, que gerencia o conteúdo e as interações dos usuários. \
         O design ficou por cargo de @alphalt-ofc, que criou uma identidade visual atraente e coerente com o tema do projeto. O Matemates é um recurso valioso para estudantes e professores de matemática, oferecendo uma abordagem inovadora para o ensino e aprendizado da disciplina.",
       image: "teste.png",
