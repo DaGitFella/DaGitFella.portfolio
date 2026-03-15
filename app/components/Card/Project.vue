@@ -25,7 +25,7 @@
             <span class="text-indigo-700 dark:text-emerald-500">$</span>
             <h2 class="font-[poppins]">{{ project.title }}</h2>
           </div>
-          <p class="text-slate-400 text-sm text-[16px] 2xl:text-lg">{{ project.description }}</p>
+          <p class="text-slate-400 text-sm text-[16px] 2xl:text-lg">{{ project.resume }}</p>
         </div>
         <div class="grid grid-cols-2 lg:grid-cols-3  gap-2.5 h-fit w-full">
           <LazyCardTechBadge v-for="tech in project.techStack" :tech="tech" type="project" />
@@ -36,15 +36,14 @@
       class="card-bottom flex gap-3.5">
         <LazyButtonCard
           @click.stop
-          text="GitHub"
+          text="Código"
           IconName="tabler:brand-github"
           :show-icon="true"
-          :link="project.github"
+          :link="project.code"
           class="bg-indigo-950 text-indigo-50 hover:bg-indigo-900
           dark:bg-emerald-950 dark:text-emerald-50 dark:hover:bg-emerald-900"
         />
         <LazyButtonCard
-          v-if="project.showLiveDemo"
           @click.stop
           text="Live"
           :show-icon="true"
@@ -66,11 +65,11 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits<{
-  (event: 'openModal'): void;
+  (event: 'openModal', project: Project): Project;
 }>();
 
 function open() {
-  emit('openModal');
+  emit('openModal', props.project);
 }
 
 </script>

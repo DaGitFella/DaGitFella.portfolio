@@ -10,7 +10,8 @@
       </ul>
       <Transition :css="false">
         <LazyCardDetails
-          v-if="isOpened"
+          :project="project"
+          :is-visible="isOpened"
           v-motion-slide-visible-bottom
           :exit="{ opacity: 0 }"
           @close-modal="close"
@@ -27,7 +28,7 @@ definePageMeta({
 
 const { projects } = useProject();
 
-const { open, close, isOpened } = useModal();
+const { open, close, isOpened, project } = useModal();
 
 useHead({
   title: "Projetos - Davi Bezerra",
