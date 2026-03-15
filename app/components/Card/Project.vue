@@ -10,9 +10,10 @@
     <div class="card-top">
       <LazyWindowBar :title="project.title" class="bg-transparent text-slate-400" />
       <div class="overflow-hidden">
-        <img
+        <NuxtImg
         :src="project.image"
         :alt="project.title"
+        quality="50"
         class="w-full h-50 2xl:h-60 object-cover transition-transform duration-300 ease-in-out
         group-hover:scale-125 object-top"
       />
