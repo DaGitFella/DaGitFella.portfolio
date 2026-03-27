@@ -26,18 +26,6 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'vue3-carousel-nuxt',
     '@nuxtjs/device',
-    ['nuxt-mail', {
-      message: {
-        to: 'davibezerra123457@gmail.com',
-      },
-      smtp: {
-        service: 'gmail',
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASS,
-        },
-      },
-    }]
   ],
   fonts: {
     defaults: {
