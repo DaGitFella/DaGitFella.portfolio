@@ -6,22 +6,8 @@
   >
     <Transition>
       <span
-        v-if="$slots.icon && showIcon && !$device.isMobileOrTablet"
-        v-motion
-        :initial="{ opacity: 0, x: 50 }"
-        :enter="{ opacity: 1, x: 0, scale: 1 }"
-        :leave="{
-          opacity: 0,
-          x: -50,
-          transition: {
-            type: 'spring',
-            stiffness: 250,
-            dumping: 25,
-            mass: 0.5,
-          },
-        }"
-        :delay="200"
-        :duration="300"
+        v-if="$slots.icon && showIcon"
+        v-motion="applyAnimation"
         class="text-xl lg:text-2xl flex items-center"
       >
         <slot name="icon">icon</slot>
@@ -32,5 +18,25 @@
 </template>
 
 <script setup lang="ts">
-const showIcon = ref(false);
+const { isMobileOrTablet } = useDevice();
+
+const animationVariant = {
+  initial: { opacity: 0, x: 50 },
+  enter: { opacity: 1, x: 0, scale: 1  },
+  delay: 200,
+  duration: 300
+}
+
+const showIcon = computed(() => {
+  if (isMobileOrTablet) return true;
+
+  return false;
+});
+
+const applyAnimation = computed(() => {
+
+  if (isMobileOrTablet) return;
+
+  return animationVariant;
+})
 </script>
