@@ -5,12 +5,18 @@
       title="ls habilidades/"
       description="# Tecnologias e ferramentas que domino para criar soluções completas"
     >
-      <ul class="flex flex-col justify-center md:grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12.5 w-full pb-10">
+      <ul
+        class="flex flex-col justify-center md:grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12.5 w-full pb-10"
+      >
         <LazyCardSkill
           v-for="skill in skills"
-          :key="skill.name"
-          :skill="skill"
-        />
+          :key="skill.icon"
+          :icon="skill.icon"
+          :techstack="skill.techstack"
+          :v-motion="applyAnimation"
+        >
+          <template #skill-name>{{ skill.name }}</template>
+        </LazyCardSkill>
       </ul>
     </NuxtLayout>
   </div>
@@ -18,6 +24,14 @@
 
 <script setup lang="ts">
 import type { Skill } from "~/components/Card/Skill.vue";
+
+const applyAnimation = computed(() => {
+  const { isMobile } = useDevice();
+
+  if (!isMobile) return {}
+
+  return 'v-motion-slide-visible-once-right'
+})
 
 const skills = reactive<Skill[]>([
   {
@@ -47,7 +61,7 @@ const skills = reactive<Skill[]>([
   {
     name: "metodologias.txt",
     techstack: ["Scrum", "Kanban", "TDD", "DRY"],
-    icon: "heroicons:sparkles",  
+    icon: "heroicons:sparkles",
   },
   {
     name: "testes.ts",

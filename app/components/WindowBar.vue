@@ -7,7 +7,9 @@
     </div>
     <div class="flex items-center text-sm lg:text-[16px] gap-2.5">
         <Icon name="tabler:terminal" />
-        <p>{{ title }}</p>
+        <p>
+          <slot></slot>
+        </p>
     </div>
   </header>
 </template>
@@ -15,11 +17,6 @@
 <script setup lang="ts">
 
 const props = defineProps({
-  title: {
-    type: String,
-    required: false,
-    default: "Window Bar",
-  },
   showActions: {
     type: Boolean,
     required: false,

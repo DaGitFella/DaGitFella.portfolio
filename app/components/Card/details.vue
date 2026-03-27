@@ -48,7 +48,7 @@
               @click.stop
               class="border border-indigo-700 dark:border-emerald-500 text-indigo-700 dark:text-emerald-500 hover:bg-indigo-700 hover:text-indigo-50 dark:hover:bg-emerald-500 dark:hover:text-emerald-50"
               text="Cliente"
-              IconName="tabler:brand-github"
+              IconName="heroicons:computer-desktop"
               :show-icon="true"
               :link="project.code.client"
             />
@@ -57,7 +57,7 @@
               @click.stop
               class="border border-indigo-700 dark:border-emerald-500 text-indigo-700 dark:text-emerald-500 hover:bg-indigo-700 hover:text-indigo-50 dark:hover:bg-emerald-500 dark:hover:text-emerald-50"
               text="Servidor"
-              IconName="tabler:brand-github"
+              IconName="heroicons:command-line"
               :show-icon="true"
               :link="project.code.server"
             />
@@ -66,7 +66,7 @@
               @click.stop
               class="border border-indigo-700 dark:border-emerald-500 text-indigo-700 dark:text-emerald-500 hover:bg-indigo-700 hover:text-indigo-50 dark:hover:bg-emerald-500 dark:hover:text-emerald-50"
               text="Código"
-              IconName="tabler:brand-github"
+              IconName="heroicons:code-bracket"
               :show-icon="true"
               :link="project.code"
             />
