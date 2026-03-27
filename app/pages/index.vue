@@ -45,16 +45,18 @@
         </article>
         <aside class="flex flex-col gap-7.5">
           <div class="flex flex-col lg:flex-row items-center gap-5">
-            <LazyButtonOutlined
-              link="/downloads/curriculo.pdf"
-              name="curriculo_davi.pdf"
-              class="w-full lg:w-fit"
+            <NuxtLink
+              to="/downloads/curriculo.pdf"
+              :external="true"
+              download="curriculo_davi_dev.pdf"
             >
-              <template #text>Download CV</template>
-              <template #icon>
-                <Icon name="heroicons:arrow-down-circle" />
-              </template>
-            </LazyButtonOutlined>
+              <LazyButtonDefault class="w-full lg:w-fit">
+                <template #text>Download CV</template>
+                <template #icon>
+                  <Icon name="heroicons:arrow-down-circle" />
+                </template>
+              </LazyButtonDefault>
+            </NuxtLink>
             <div class="flex gap-2.5">
               <LazyButtonContact link="https://github.com/DaGitFella">
                 <Icon name="tabler:brand-github" />
