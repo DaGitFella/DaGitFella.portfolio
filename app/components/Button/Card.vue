@@ -11,7 +11,8 @@
       <span v-if="$slots.Icon" class="text-xl 2xl:text-2xl flex items-center">
         <slot name="Icon">Icon</slot>
       </span>
-      <slot name="text">text</slot>
+
+      <slot name="text"> text </slot>
     </NuxtLink>
   </button>
 </template>
@@ -20,6 +21,8 @@
 const props = defineProps<{
   link?: string | CodeLink;
 }>();
+
+const showText = ref(false);
 
 const link = computed(() => {
   if (typeof props.link === "string") {

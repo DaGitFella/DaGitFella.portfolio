@@ -43,7 +43,12 @@
         <LazyButtonCard
           @click.stop
           :link="project.code"
-          class="bg-indigo-950 text-indigo-50 hover:bg-indigo-900 dark:bg-emerald-950 dark:text-emerald-50 dark:hover:bg-emerald-900"
+          class="bg-indigo-950 text-indigo-50 
+          hover:bg-indigo-900 dark:bg-emerald-900 
+          dark:text-emerald-50 dark:hover:bg-emerald-950
+          hover:shadow-indigo-900 dark:hover:shadow-emerald-900
+          
+          "
         >
           <template #text>Código</template>
           <template #Icon>
