@@ -6,7 +6,7 @@
   >
     <Transition>
       <span
-        v-if="$slots.icon && showIcon"
+        v-if="$slots.icon && showIcon && !$device.isMobileOrTablet"
         v-motion
         :initial="{ opacity: 0, x: 50 }"
         :enter="{ opacity: 1, x: 0, scale: 1 }"
