@@ -1,8 +1,8 @@
 <template>
   <client-only>
     <div>
-      <LazyNavMobile v-if="$device.isMobileOrTablet" />
-      <LazyNavDesktop v-else />
+      <NavMobile v-if="$device.isMobileOrTablet" />
+      <NavDesktop v-else />
 
       <main>
         <slot></slot>
