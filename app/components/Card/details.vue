@@ -5,10 +5,7 @@
     class="w-screen h-screen fixed top-0 p-5 py-50 lg:px-30 2xl:px-50 flex items-center justify-center z-50 bg-white/10 backdrop-blur-sm cursor-pointer"
   >
     <section
-      class="bg-slate-100 flex flex-col-reverse max-h-180 
-      overflow-scroll dark:bg-slate-900 rounded-lg p-9 lg:p-12.5 lg:grid lg:grid-cols-2 gap-10 
-      shadow-indigo-layered dark:shadow-emerald-layered hover:outline-3 hover:outline-indigo-700 dark:hover:outline-emerald-500
-      transition-all duration-500"
+      class="bg-slate-100 flex flex-col-reverse max-h-180 overflow-scroll dark:bg-slate-900 rounded-lg p-9 lg:p-12.5 lg:grid lg:grid-cols-2 gap-10 shadow-indigo-layered dark:shadow-emerald-layered hover:outline-3 hover:outline-indigo-700 dark:hover:outline-emerald-500 transition-all duration-500"
     >
       <figure class="flex flex-col gap-3 lg:justify-between lg:h-full">
         <LazyNuxtImg
@@ -34,7 +31,7 @@
               damping: 20,
             }"
             :src="project?.image"
-            alt="Tux image expanded"
+            :alt="project?.title"
             class="h-[90vh] w-[90vw] rounded-2xl border-2 border-indigo-500 dark:border-emerald-500 shadow-2xl"
           />
         </div>
@@ -47,37 +44,45 @@
               v-if="typeof project?.code === 'object' && project?.code.client"
               @click.stop
               class="border border-indigo-700 dark:border-emerald-500 text-indigo-700 dark:text-emerald-500 hover:bg-indigo-700 hover:text-indigo-50 dark:hover:bg-emerald-500 dark:hover:text-emerald-50"
-              text="Cliente"
-              IconName="heroicons:computer-desktop"
-              :show-icon="true"
               :link="project.code.client"
-            />
+            >
+              <template #Icon>
+                <Icon name="heroicons:computer-desktop" />
+              </template>
+              <template #text>Cliente</template>
+            </LazyButtonCard>
             <LazyButtonCard
               v-if="typeof project?.code === 'object' && project?.code.server"
               @click.stop
               class="border border-indigo-700 dark:border-emerald-500 text-indigo-700 dark:text-emerald-500 hover:bg-indigo-700 hover:text-indigo-50 dark:hover:bg-emerald-500 dark:hover:text-emerald-50"
-              text="Servidor"
-              IconName="heroicons:command-line"
-              :show-icon="true"
               :link="project.code.server"
-            />
+            >
+              <template #Icon>
+                <Icon name="heroicons:command-line" />
+              </template>
+              <template #text>Servidor</template>
+            </LazyButtonCard>
             <LazyButtonCard
               v-else-if="typeof project?.code === 'string'"
               @click.stop
               class="border border-indigo-700 dark:border-emerald-500 text-indigo-700 dark:text-emerald-500 hover:bg-indigo-700 hover:text-indigo-50 dark:hover:bg-emerald-500 dark:hover:text-emerald-50"
-              text="Código"
-              IconName="heroicons:code-bracket"
-              :show-icon="true"
               :link="project.code"
-            />
+            >
+              <template #Icon>
+                <Icon name="heroicons:code-bracket" />
+              </template>
+              <template #text>Código</template>
+            </LazyButtonCard>
             <LazyButtonCard
               @click.stop
               class="border border-indigo-700 dark:border-emerald-500 text-indigo-700 dark:text-emerald-500 hover:bg-indigo-700 hover:text-indigo-50 dark:hover:bg-emerald-500 dark:hover:text-emerald-50"
-              text="Live Demo"
-              IconName="tabler:external-link"
-              :show-icon="true"
               :link="project?.liveDemo"
-            />
+            >
+              <template #Icon>
+                <Icon name="tabler:external-link" />
+              </template>
+              <template #text>Live Demo</template>
+            </LazyButtonCard>
           </div>
         </div>
       </figure>
