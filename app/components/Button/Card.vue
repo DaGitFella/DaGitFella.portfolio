@@ -22,8 +22,6 @@ const props = defineProps<{
   link?: string | CodeLink;
 }>();
 
-const showText = ref(false);
-
 const link = computed(() => {
   if (typeof props.link === "string") {
     return props.link;

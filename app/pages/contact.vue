@@ -75,7 +75,7 @@ const mailtoLink = computed(() => {
   return `mailto:${recipient}?subject=${subject}&body=${body}`;
 });
 
-const handleSubmit = async () => {
+const handleSubmit = () => {
   if (!formData.name || !formData.message) {
     alert("Por favor preencha seu nome e nos mande uma mensagem.");
     return;

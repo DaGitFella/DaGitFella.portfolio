@@ -1,10 +1,11 @@
 export const useTypewriter = (fullText: string, speed: number = 100) => {
   const displayText = ref('');
+  let interval: NodeJS.Timeout;
 
   onMounted(() => {
     let currentIndex = 0;
 
-    const interval = setInterval(() => {
+    interval = setInterval(() => {
       if (currentIndex <= fullText.length) {
         displayText.value = fullText.slice(0, currentIndex);
         currentIndex++;
@@ -12,10 +13,12 @@ export const useTypewriter = (fullText: string, speed: number = 100) => {
         clearInterval(interval);
       }
     }, speed);
+  });
 
-    onBeforeUnmount(() => {
+  onBeforeUnmount(() => {
+    if (interval) {
       clearInterval(interval);
-    });
+    }
   });
 
   return {

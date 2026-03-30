@@ -11,15 +11,10 @@
         <LazyCardSkill
           v-for="skill in skills"
           :key="skill.icon"
-          :name="skill.name"
-          :icon="skill.icon"
-          :techstack="skill.techstack"
-          :v-motion="applyAnimation"
-        >
-        <template #skill-icon>
-          <LazyCardIcon :icon="skill.icon" />
-        </template>
-      </LazyCardSkill>
+          :skill="skill"
+          is="li"
+          :preset="applyAnimation"
+        />
       </ul>
     </NuxtLayout>
   </div>
@@ -28,13 +23,12 @@
 <script setup lang="ts">
 import type { Skill } from "~/components/Card/Skill.vue";
 
+const { isMobile } = useDevice();
 const applyAnimation = computed(() => {
-  const { isMobile } = useDevice();
+  if (!isMobile) return "";
 
-  if (!isMobile) return {}
-
-  return 'v-motion-slide-visible-once-right'
-})
+  return "slideVisibleOnceRight";
+});
 
 const skills = reactive<Skill[]>([
   {

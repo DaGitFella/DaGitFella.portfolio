@@ -8,7 +8,7 @@
         {{ project.title }}
       </LazyWindowBar>
       <div class="overflow-hidden">
-        <NuxtImg
+        <LazyNuxtImg
           :src="project.image"
           :alt="project.title"
           quality="50"

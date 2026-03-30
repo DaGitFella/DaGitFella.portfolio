@@ -6,7 +6,7 @@
   >
     <Transition>
       <span
-        v-if="$slots.icon && showIcon"
+        v-if="$slots.icon && handleIconVisibility"
         v-motion="applyAnimation"
         class="text-xl lg:text-2xl flex items-center"
       >
@@ -30,7 +30,7 @@ const animationVariant = {
 const showIcon = ref(false);
 
 const handleIconVisibility = computed(() => {
-  if (isMobileOrTablet) return showIcon.value = true;
+  if (isMobileOrTablet) return true;
 
   return showIcon.value;
 });

@@ -11,7 +11,7 @@
       transition-all duration-500"
     >
       <figure class="flex flex-col gap-3 lg:justify-between lg:h-full">
-        <NuxtImg
+        <LazyNuxtImg
           :src="project?.image"
           alt="Tux image"
           quality="50"
@@ -23,7 +23,7 @@
           @click.stop="isImageExpanded = false"
           class="fixed inset-0 z-60 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-5 cursor-zoom-out"
         >
-          <NuxtImg
+          <LazyNuxtImg
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
             :enter="{ scale: 1, opacity: 1 }"
