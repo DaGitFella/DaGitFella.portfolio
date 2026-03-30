@@ -50,7 +50,7 @@ const skills = reactive<Skill[]>([
   },
   {
     name: "backend.py",
-    techstack: ["Python", "FastAPI", "Flask", "API REST"],
+    techstack: ["NestJS", "FastAPI", "Flask", "API REST"],
     icon: "heroicons:command-line",
   },
   {
@@ -65,8 +65,18 @@ const skills = reactive<Skill[]>([
   },
   {
     name: "testes.ts",
-    techstack: ["Pytest", "TDD"],
+    techstack: ["Pytest"],
     icon: "tabler:test-pipe",
+  },
+  {
+    name: "ORM.lib",
+    techstack: ["Prisma", "SQLAlchemy"],
+    icon: "tabler:database-import",
+  },
+  {
+    name: "controle_de_versao.git",
+    techstack: ["Git", "GitHub", "GitLab"],
+    icon: "tabler:brand-git",
   },
 ]);
 

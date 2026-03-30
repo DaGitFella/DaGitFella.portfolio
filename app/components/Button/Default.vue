@@ -21,16 +21,18 @@
 const { isMobileOrTablet } = useDevice();
 
 const animationVariant = {
-  initial: { opacity: 0, x: 50 },
+  initial: { opacity: 0, x: -50 },
   enter: { opacity: 1, x: 0, scale: 1  },
   delay: 200,
   duration: 300
 }
 
-const showIcon = computed(() => {
-  if (isMobileOrTablet) return true;
+const showIcon = ref(false);
 
-  return false;
+const handleIconVisibility = computed(() => {
+  if (isMobileOrTablet) return showIcon.value = true;
+
+  return showIcon.value;
 });
 
 const applyAnimation = computed(() => {
@@ -39,4 +41,5 @@ const applyAnimation = computed(() => {
 
   return animationVariant;
 })
+
 </script>
