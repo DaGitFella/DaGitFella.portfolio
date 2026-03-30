@@ -6,9 +6,9 @@
       description="# Tecnologias e ferramentas que domino para criar soluções completas"
     >
       <ul
-        class="flex flex-col justify-center md:grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12.5 w-full pb-10"
+        class="flex flex-col overflow-hidden lg:overflow-visible justify-center md:grid md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12.5 w-full pb-10"
       >
-        <LazyCardSkill
+        <CardSkill
           v-for="skill in skills"
           :key="skill.icon"
           :skill="skill"
@@ -23,12 +23,7 @@
 <script setup lang="ts">
 import type { Skill } from "~/components/Card/Skill.vue";
 
-const { isMobile } = useDevice();
-const applyAnimation = computed(() => {
-  if (!isMobile) return "";
-
-  return "slideVisibleOnceRight";
-});
+const {applyAnimation} = UseAnimation();
 
 const skills = reactive<Skill[]>([
   {
