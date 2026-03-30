@@ -5,10 +5,12 @@
     ></div>
     <div class="grid lg:grid-cols-12 justify-between w-full">
       <section
-        class="flex flex-col md:col-span-4 lg:col-span-8 2xl:col-span-7 gap-10"
+        class="flex flex-col flex-nowrap md:col-span-4 lg:col-span-8 2xl:col-span-7 
+        gap-10 max-w-full overflow-hidden"
       >
         <article
-          class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800 max-w-full w-full"
+          class="flex flex-col flex-nowrap border border-slate-500 rounded-xl 
+          dark:border-slate-800 w-full overflow-hidden"
         >
           <LazyWindowBar :show-actions="false">{{
             "~/davi-portfolio"
