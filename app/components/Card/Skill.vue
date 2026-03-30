@@ -4,9 +4,9 @@
   >
     <div class="flex justify-between items-center">
       <div class="flex items-center gap-4">
-        <LazyCardIcon :icon="skill.icon" />
+        <slot name="skill-icon">{{ skill.icon }}</slot>
         <h2 class="text-lg lg:text-2xl font-medium font-title">
-          <slot name="skill-name"></slot>
+          <slot name="skill-name">{{ skill.name }}</slot>
         </h2>
       </div>
     </div>
@@ -23,11 +23,12 @@
 <script setup lang="ts">
 export interface Skill {
   name: string;
-  icon?: string;
+  icon: string;
   techstack: string[];
 }
 
 const skill = defineProps<{
+  name: string,
   techstack: string[],
   icon: string,
 }>()

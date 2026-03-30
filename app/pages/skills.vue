@@ -11,12 +11,15 @@
         <LazyCardSkill
           v-for="skill in skills"
           :key="skill.icon"
+          :name="skill.name"
           :icon="skill.icon"
           :techstack="skill.techstack"
           :v-motion="applyAnimation"
         >
-          <template #skill-name>{{ skill.name }}</template>
-        </LazyCardSkill>
+        <template #skill-icon>
+          <LazyCardIcon :icon="skill.icon" />
+        </template>
+      </LazyCardSkill>
       </ul>
     </NuxtLayout>
   </div>
