@@ -8,7 +8,7 @@
         class="flex flex-col md:col-span-4 lg:col-span-8 2xl:col-span-7 gap-10"
       >
         <article
-          class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800 max-w-10/12 lg:max-w-none w-full"
+          class="flex flex-col border border-slate-500 rounded-xl overflow-hidden dark:border-slate-800 max-w-full w-full"
         >
           <LazyWindowBar :show-actions="false">{{
             "~/davi-portfolio"
