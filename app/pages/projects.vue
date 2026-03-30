@@ -2,11 +2,16 @@
   <div>
     <NuxtLayout name="title" title="ls projetos/">
       <ul
-        class="grid md:grid-cols-2 lg:grid-cols-3 lg:pb-20 gap-8 2xl:gap-11 w-full h-fit"
+        class="grid md:grid-cols-2 lg:grid-cols-3 lg:pb-20 gap-8 2xl:gap-11 w-full h-fit overflow-hidden lg:overflow-visible"
       >
-        <li v-for="project in projects" :key="project.title">
-          <LazyCardProject @open-modal="open" :project="project" />
-        </li>
+        <LazyCardProject
+          v-for="project in projects"
+          :key="project.title"
+          @open-modal="open"
+          :project="project"
+          is="li"
+          :preset="applyAnimation"
+        />
       </ul>
       <Transition :css="false">
         <LazyCardDetails
@@ -29,6 +34,8 @@ definePageMeta({
 const { projects } = useProject();
 
 const { open, close, isOpened, project } = useModal();
+
+const { applyAnimation } = UseAnimation();
 
 useHead({
   title: "Projetos - Davi Bezerra",

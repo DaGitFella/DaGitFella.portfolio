@@ -1,5 +1,5 @@
 <template>
-  <div
+  <Motion
     @click="open"
     class="group outline flex flex-col gap-7.5 rounded-xl overflow-hidden transition-colors duration-300 ease-in-out bg-slate-100 outline-slate-200 shadow-base dark:bg-slate-900 dark:outline-slate-800 text-slate-950 dark:text-slate-50 cursor-pointer dark:shadow-base-dark hover:shadow-indigo-layered hover:outline-[3px] lg:hover:outline-indigo-500 lg:dark:hover:outline-emerald-500 dark:hover:shadow-emerald-layered"
   >
@@ -67,7 +67,7 @@
         </LazyButtonCard>
       </div>
     </div>
-  </div>
+  </Motion>
 </template>
 
 <script setup lang="ts">
