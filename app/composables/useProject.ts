@@ -100,15 +100,26 @@ export const useProject = () => {
       colaborators: ["DaGitFella"],
     },
     {
-      title: "portfolio pessoal",
+      title: "História Jornal",
       resume:
-        "Meu portfólio pessoal, desenvolvido com Nuxt, TypeScript e Tailwindcss. Tem por objetivo apresentar meus projetos e habilidades.",
+        "Projeto de desenvolvimento para estudo de HTML e CSS, desenvolvido no IFRN.",
       description:
-        "Meu projeto de portfólio pessoal, desenvolvido utilizando nuxt como parte de meu aprendizado.",
-      image: "portfolio.png",
-      techStack: ["Nuxt", "TypeScript", "Tailwindcss"],
-      code: "https://github.com/DaGitFella/portfolio.git",
-      colaborators: ["DaGitFella"],
+        "O História Jornal é um site de notícias fictício, que apresenta uma interface simples e responsiva, construída com HTML, CSS puro. O projeto tem por objetivo apresentar meus conhecimentos em desenvolvimento web frontend, além de servir como um recurso para estudantes que estão começando a aprender sobre desenvolvimento web. O História Jornal é um exemplo de como criar um site de notícias básico, com foco na estruturação do conteúdo e na apresentação visual",
+      image: "historia_jornal.png",
+      techStack: ["HTML", "CSS"],
+      code: "https://dagitfella.github.io/DaGitFella.historia_jornal/",
+      colaborators: ["DaGitFella, IsqDantas, carlosDvi"],
+    },
+    {
+      title: "Aprendizado de JS",
+      resume:
+        "Projeto de desenvolvimento para estudo de HTML, CSS e JavaScript, desenvolvido no IFRN.",
+      description:
+        "O Aprendizado de JS é um projeto de estudo sobre JavaScript, que apresenta uma interface simples, construída com HTML, CSS e JavaScript. No exemplo, demonstro um simples teste da função sort.",
+      image: "aprendizado_js.png",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      code: "https://dagitfella.github.io/DaGitFella.aprendizado_js/",
+      colaborators: ["DaGitFella, IsqDantas, carlosDvi"],
     },
   ]);
 
