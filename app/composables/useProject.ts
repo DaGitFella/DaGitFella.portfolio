@@ -37,7 +37,8 @@ export const useProject = () => {
       title: "4anime",
       resume:
         "Sistema de posts sobre animes. Apresenta CRUD completo de posts e usuário, função de favoritar e curtir.",
-      description: "Projeto de desenvolvimento para estudo de FastAPI e Vue.js desenvolvido no IFRN. O 4Anime é um sistema de posts sobre animes, que apresenta um CRUD completo de posts e usuários, além de funções de favoritar e curtir. O frontend foi desenvolvido com Vue.js, proporcionando uma experiência de usuário fluida e responsiva, enquanto o backend foi construído com FastAPI, garantindo alta performance e escalabilidade. \
+      description:
+        "Projeto de desenvolvimento para estudo de FastAPI e Vue.js desenvolvido no IFRN. O 4Anime é um sistema de posts sobre animes, que apresenta um CRUD completo de posts e usuários, além de funções de favoritar e curtir. O frontend foi desenvolvido com Vue.js, proporcionando uma experiência de usuário fluida e responsiva, enquanto o backend foi construído com FastAPI, garantindo alta performance e escalabilidade. \
         O projeto é uma plataforma interativa para fãs de anime, permitindo que compartilhem suas opiniões e descubram novos títulos. Atuei como desenvolvedor Full Stack, sendo responsável por toda a implementação do frontend e backend, além da arquitetura do sistema e concepção do banco de dados. O design ficou por conta de @alphalt-ofc e @luanny, que criaram uma interface moderna e atraente, alinhada com a temática do projeto. O 4Anime é um recurso valioso para a comunidade de fãs de anime, oferecendo uma plataforma para interação e compartilhamento de conteúdo relacionado a animes. ",
       image: "4Anime.png",
       techStack: ["Vue.js", "FastAPI", "Tailwindcss", "API Rest", "JWT"],
@@ -65,7 +66,7 @@ export const useProject = () => {
       title: "dados livres",
       resume:
         "Contribuição em sistema de catalogação de dados abertos, projeto de extensão do IFRN campus Natal Zona Norte. ",
-      description: 
+      description:
         "O Dados Livres é um projeto de extensão do IFRN e de código aberto que foca na colaboração da comunidade para a catalogação de dados abertos. Atuei tanto no frontend, desenvolvendo \
         a interface mobile e corrigindo problemas na versão de desktop, como no backend, construindo uma API em Flask. Além disso, consertei as dependências do projeto que estavam legadas e \
         alterei o gerenciador de dependências para o poetry.",
@@ -79,13 +80,24 @@ export const useProject = () => {
       title: "api mensagens",
       resume:
         "API de mensagens, com autenticação JWT e CRUD completo de mensagens e usuários. Projeto pessoal para estudo de FastAPI.",
-      description: 
+      description:
         "Projeto pessoal de estudos em FastApi desenvolvido no IFRN. Fui o principal desenvolvedor, responsável pela arquitetura e boa parte da implementação. Apresenta \
         CRUD completo de mensagens, autenticação com JWT e testes automatizados.",
       image: "api_mensagens.png",
       techStack: ["FastAPI", "JWT", "Alembic", "API Rest"],
       code: "https://github.com/DaGitFella/api-mensagens.git",
       colaborators: ["DaGitFella", "alphalt-ofc", "luaanny"],
+    },
+    {
+      title: "portfolio pessoal",
+      resume:
+        "Meu portfólio pessoal, desenvolvido com Nuxt, TypeScript e Tailwindcss. Tem por objetivo apresentar meus projetos e habilidades.",
+      description:
+        "Meu projeto de portfólio pessoal, desenvolvido utilizando nuxt como parte de meu aprendizado.",
+      image: "portfolio.png",
+      techStack: ["Nuxt", "TypeScript", "Tailwindcss"],
+      code: "https://github.com/DaGitFella/portfolio.git",
+      colaborators: ["DaGitFella"],
     },
     {
       title: "portfolio pessoal",

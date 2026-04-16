@@ -1,18 +1,31 @@
 <template>
   <div>
     <NuxtLayout name="title" title="ls projetos/">
-      <ul
-        class="grid md:grid-cols-2 lg:grid-cols-3 lg:pb-20 gap-8 2xl:gap-11 w-full h-fit overflow-hidden lg:overflow-visible"
+      <TransitionGroup
+        name="project-list"
+        tag="ul"
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 2xl:gap-11 w-full h-fit overflow-hidden lg:overflow-visible"
+        :class="{'lg:pb-20': projects.length <= 6}"
       >
-        <LazyCardProject
-          v-for="project in projects"
-          :key="project.title"
-          @open-modal="open"
-          :project="project"
-          is="li"
-          :preset="applyAnimation"
-        />
-      </ul>
+        <li v-for="project in displayedProjects" :key="project.title" class="w-full">
+          <LazyCardProject
+            @open-modal="open"
+            :project="project"
+            :preset="applyAnimation"
+          />
+        </li>
+      </TransitionGroup>
+
+      <div v-if="projects.length > 6" class="w-full flex justify-center lg:pb-10">
+        <ButtonDefault
+          type="button"
+          @click="toggleProjects"
+          class="w-full max-w-full"
+        >
+          <template #text>{{ isExpanded ? "Mostrar menos projetos" : "Mostrar todos os projetos" }}</template>
+        </ButtonDefault>
+      </div>
+
       <Transition :css="false">
         <LazyCardDetails
           :project="project"
@@ -32,6 +45,15 @@ definePageMeta({
 });
 
 const { projects } = useProject();
+const isExpanded = ref(false);
+
+const displayedProjects = computed(() =>
+  isExpanded.value ? projects : projects.slice(0, 6)
+);
+
+const toggleProjects = () => {
+  isExpanded.value = !isExpanded.value;
+};
 
 const { open, close, isOpened, project } = useModal();
 
@@ -48,3 +70,27 @@ useHead({
   ],
 });
 </script>
+
+<style scoped>
+.project-list-enter-from,
+.project-list-leave-to {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.project-list-enter-to,
+.project-list-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-list-enter-active,
+.project-list-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+button {
+  min-width: 0;
+}
+
+</style>
