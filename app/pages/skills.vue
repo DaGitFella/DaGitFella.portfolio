@@ -36,7 +36,7 @@ const skills = reactive<Skill[]>([
       "JavaScript",
       "TypeScript",
       "Angular",
-      "bootstrap",
+      "Bootstrap",
     ],
     icon: "heroicons:rectangle-group-16-solid",
   },
