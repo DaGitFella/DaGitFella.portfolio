@@ -78,7 +78,7 @@ Abra seu navegador em `http://localhost:3000`.
 
 Se você curtiu o projeto, quer trocar uma ideia sobre o Nuxt 4 ou encontrou algo que pode melhorar, meu inbox está sempre aberto!
 
-* **LinkedIn:** [Davi Lucas](https://www.google.com/search?q=https://linkedin.com/in/davi-lucas-510686283)
+* **LinkedIn:** [Davi Lucas](https://www.google.com/search?q=https://linkedin.com/in/davi-lucas-510686283/)
 * **E-mail:** [davibezerra123457@gmail.com]
 
 ---
