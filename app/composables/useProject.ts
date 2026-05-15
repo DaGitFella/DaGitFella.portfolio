@@ -107,7 +107,8 @@ export const useProject = () => {
         "O História Jornal é um site de notícias fictício, que apresenta uma interface simples e responsiva, construída com HTML, CSS puro. O projeto tem por objetivo apresentar meus conhecimentos em desenvolvimento web frontend, além de servir como um recurso para estudantes que estão começando a aprender sobre desenvolvimento web. O História Jornal é um exemplo de como criar um site de notícias básico, com foco na estruturação do conteúdo e na apresentação visual",
       image: "historia_jornal.png",
       techStack: ["HTML", "CSS"],
-      code: "https://dagitfella.github.io/DaGitFella.historia_jornal/",
+      code: "https://github.com/DaGitFella/DaGitFella.historia_jornal.git",
+      liveDemo: "https://dagitfella.github.io/DaGitFella.historia_jornal/",
       colaborators: ["DaGitFella, IsqDantas, carlosDvi"],
     },
     {
@@ -118,7 +119,8 @@ export const useProject = () => {
         "O Aprendizado de JS é um projeto de estudo sobre JavaScript, que apresenta uma interface simples, construída com HTML, CSS e JavaScript. No exemplo, demonstro um simples teste da função sort.",
       image: "aprendizado_js.png",
       techStack: ["HTML", "CSS", "JavaScript"],
-      code: "https://dagitfella.github.io/DaGitFella.aprendizado_js/",
+      code: "https://github.com/DaGitFella/DaGitFella.aprendizado_js.git",
+      liveDemo: "https://dagitfella.github.io/DaGitFella.aprendizado_js/",
       colaborators: ["DaGitFella, IsqDantas, carlosDvi"],
     },
   ]);
